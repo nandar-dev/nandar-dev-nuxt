@@ -1,7 +1,7 @@
 <template>
   <NavBar />
 
-  <div style="height: 200vh;">
+  <div style="height: 200vh">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aut incidunt
     eaque consequatur officia. Ratione distinctio recusandae quo libero ipsa
     reiciendis temporibus praesentium placeat. Alias omnis autem atque illum
@@ -212,3 +212,9 @@
     iste.
   </div>
 </template>
+
+
+<script lang="ts">
+
+
+</script>

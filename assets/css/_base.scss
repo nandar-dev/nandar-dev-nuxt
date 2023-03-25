@@ -6,13 +6,19 @@
   --main-color: #3f3d56;
   --bg-color: #fff;
   --link-hover-color: #7066e2;
-  --divider-color: rgba(60, 60, 67, .12);
+  --divider-color: rgba(60, 60, 67, 0.12);
+  --icon-color: #737171;
+  --max-width: 1440px;
 
   //nav bar
   --navbar-bg-color: rgba(255, 255, 255, 0.8);
   --navbar-blur: 5px;
-  --navbar-height: 50px;
+  --navbar-height: 60px;
+  --nav-link-font-size: 1rem;
+  --nav-icon-size: 1.3rem;
 }
+
+@import './theme';
 
 * {
   margin: 0;
@@ -25,21 +31,26 @@
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1440px;
-  margin: 0 auto;
-  margin-top: 40px;
+body {
+  background-color: var(--bg-color);
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
-  .container {
-    width: 100%;
-    padding-left: 23px;
-    flex-direction: column-reverse;
-  }
-  .boxes {
-    width: 100%;
-  }
-}
+// .container {
+//   display: flex;
+//   flex-wrap: wrap;
+//   width: 100%;
+//   max-width: var(--max-width);
+//   margin: 0 auto;
+//   margin-top: 40px;
+// }
+
+// @media only screen and (min-width: 320px) and (max-width: 576px) {
+//   .container {
+//     width: 100%;
+//     padding-left: 23px;
+//     flex-direction: column-reverse;
+//   }
+//   .boxes {
+//     width: 100%;
+//   }
+// }

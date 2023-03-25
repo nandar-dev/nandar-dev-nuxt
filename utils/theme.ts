@@ -15,11 +15,13 @@ const getSystemDefaultTheme = () => {
     return theme.light;
   }
 };
-
-export const switchTheme = (val: string) => {
-  localStorage.setItem(themeLocalName, val);
-};
+let themeStorage = useLocalStorage(themeLocalName, getSystemDefaultTheme());
 
 export const getTheme = (): string => {
-  return localStorage.getItem(themeLocalName) || getSystemDefaultTheme();
+  return themeStorage.value || getSystemDefaultTheme();
+};
+
+export const switchTheme = (val: theme) => {
+  themeStorage.value = val;
+  useColorMode().preference = val;
 };
