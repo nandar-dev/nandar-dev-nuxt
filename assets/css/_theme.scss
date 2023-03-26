@@ -1,9 +1,16 @@
 .dark {
-  --main-color: #3f3d56;
+  --main-color: #8781c2;
   --bg-color: rgb(15 23 42/1);
   --link-hover-color: #7066e2;
-  --divider-color: rgba(60, 60, 67, 0.12);
-  --icon-color: #737171;
+  --divider-color: rgb(46, 61, 83);
+  --icon-color: #c7c6c6;
 
+  //nav bar
   --navbar-bg-color: rgba(22, 27, 34, 0.5);
+  --navbar-link-color: #fff;
+
+  //menu
+  --menu-bg-color: rgba(15, 23, 42, 0.8);
+  --menu-panel-bg-color: #8781c2;
+  --menu-divider-color: rgb(169 169 169);
 }

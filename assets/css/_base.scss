@@ -9,13 +9,21 @@
   --divider-color: rgba(60, 60, 67, 0.12);
   --icon-color: #737171;
   --max-width: 1440px;
+  --base-transaction: 0.4s;
 
   //nav bar
+  --navbar-link-color: #000;
   --navbar-bg-color: rgba(255, 255, 255, 0.8);
   --navbar-blur: 5px;
   --navbar-height: 60px;
   --nav-link-font-size: 1rem;
   --nav-icon-size: 1.3rem;
+  
+  //menu
+  --menu-bg-color: rgba(0,0,0,.15);
+  --menu-panel-bg-color: #fff;
+  --menu-divider-color: rgb(223 223 223);
+  --menu-blur: 4px;
 }
 
 @import './theme';
