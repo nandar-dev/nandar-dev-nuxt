@@ -1,7 +1,8 @@
 <template>
   <NavBar />
+  <Home />
 
-  <div style="height: 200vh">
+  <div   style="height: 200vh; padding-top: 300px">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aut incidunt
     eaque consequatur officia. Ratione distinctio recusandae quo libero ipsa
     reiciendis temporibus praesentium placeat. Alias omnis autem atque illum
@@ -213,8 +214,4 @@
   </div>
 </template>
 
-
-<script lang="ts">
-
-
-</script>
+<script lang="ts"></script>

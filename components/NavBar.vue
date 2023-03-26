@@ -5,10 +5,10 @@
       <div class="right-link">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#home">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#home">Skill</a></li>
           <li><a href="#home">Project</a></li>
-          <li><a href="#home">Contect</a></li>
+          <li><a href="#home">Contact</a></li>
         </ul>
 
         <div class="theme">
@@ -100,6 +100,14 @@
 import { getTheme, theme, switchTheme } from "./../utils/theme";
 import { TransitionSlide } from "@morev/vue-transitions";
 
+if (process.client) {
+  let header = document.querySelector("header");
+  window.addEventListener("scroll", () => {
+    header?.classList.toggle("shadow", window.scrollY > 0);
+  });
+  console.log(window.scrollX, "scoll x");
+}
+
 export default {
   components: { TransitionSlide },
   setup() {
@@ -174,6 +182,10 @@ export default {
   }
 }
 
+.shadow {
+  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -181,14 +193,14 @@ header {
   backdrop-filter: blur(var(--navbar-blur));
   -webkit-backdrop-filter: blur(--navbar-blur);
   background-color: var(--navbar-bg-color);
-  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+  transition: 0.5s;
 
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: var(--navbar-height);
-    padding: 15px 30px;
+    padding: 15px var(--base-lr-padding);
     box-sizing: border-box;
     width: 100%;
     max-width: var(--max-width);
