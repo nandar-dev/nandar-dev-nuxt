@@ -3,6 +3,30 @@
     <h1>Who am I?</h1>
     <div class="img-content">
       <img src="./../assets/images/nd.png" alt="" />
+      <div class="info">
+        <h4>Name: <span>Nandar</span></h4>
+        <h4>
+          Age: <span>{{ getAge() }} </span>
+        </h4>
+        <h4>
+          Location:
+          <span>
+            <a target="_blank" href="https://goo.gl/maps/qfSY6ZsXDyL1DLs39"
+              >Nawnghkio, Myanmar</a
+            >
+          </span>
+        </h4>
+        <h4>
+          Email:
+          <span>
+            <a
+              href="mailto:user@example.com?subject=Subject&body=message%20goes%20here"
+              >nandar.dev.mgk@gmail.com</a
+            >
+          </span>
+        </h4>
+        <h4>Phone: <span>+95926455544</span></h4>
+      </div>
     </div>
 
     <p>
@@ -31,6 +55,25 @@
   </section>
 </template>
 
+<script lang="ts">
+export default {
+  setup() {
+    const getAge = () => {
+      const now = new Date();
+      const birthDaay = new Date("2000-10-14");
+      var dateDiffInTime = now.getTime() - birthDaay.getTime();
+      var dateDiffInYear = dateDiffInTime / (1000 * 3600 * 24 * 365);
+      return Math.floor(dateDiffInYear);
+    };
+
+    getAge();
+    return {
+      getAge,
+    };
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 .about {
   h1 {
@@ -43,11 +86,26 @@
   .img-content {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 300px;
+
+    .info {
+      display: flex;
+      row-gap: 20px;
+      flex-direction: column;
+      justify-content: space-between;
+      color: var(--text-grey-color);
+      a {
+        color: var(--text-grey-color);
+      }
+      h4 {
+        font-weight: normal;
+      }
+    }
   }
   img {
     width: 300px;
-    padding-bottom: 50px;
-
   }
 }
 </style>

@@ -137,10 +137,6 @@ export default {
     font-weight: 500;
     font-size: var(--nav-link-font-size);
     color: var(--navbar-link-color);
-    transition: var(--base-transaction);
-    &:hover {
-      color: var(--link-hover-color);
-    }
   }
 }
 
@@ -150,11 +146,7 @@ export default {
   align-items: center;
   font-size: var(--nav-icon-size);
   a {
-    transition: var(--base-transaction);
     color: var(--icon-color);
-    &:hover {
-      color: var(--link-hover-color);
-    }
   }
 }
 

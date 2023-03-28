@@ -66,6 +66,13 @@ button {
   }
 }
 
+a {
+  transition: var(--base-transaction) !important;
+  &:hover {
+    color: var(--link-hover-color) !important;
+  }
+}
+
 .container {
   width: 100%;
   max-width: var(--max-width);
