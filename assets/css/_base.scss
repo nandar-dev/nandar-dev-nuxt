@@ -62,6 +62,7 @@
 
 body {
   background-color: var(--bg-color);
+  transition: all var(--base-transaction) ease;
 }
 
 button {

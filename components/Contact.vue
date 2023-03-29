@@ -49,7 +49,7 @@
   margin-top: var(--section-margin);
   .contact-container {
     margin: 0 auto;
-    padding: 0 32px;
+    // padding: 0 32px;
 
     form {
       width: 100%;
