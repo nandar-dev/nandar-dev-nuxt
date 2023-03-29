@@ -2,6 +2,6 @@
   <NavBar />
   <Home />
   <About />
+  <Contact />
+  <Footer />
 </template>
-
-<script lang="ts"></script>

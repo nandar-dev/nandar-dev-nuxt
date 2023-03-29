@@ -2,73 +2,83 @@
   <section class="container about" id="about">
     <h1>Who am I?</h1>
     <div class="img-content">
-      <img src="./../assets/images/nd.png" alt="" />
+      <div class="wrapper">
+        <img src="./../assets/images/nd.png" alt="" />
+      </div>
+
       <div class="info">
-        <h4>Name: <span>Nandar</span></h4>
         <h4>
-          Age: <span>{{ getAge() }} </span>
+          Name: <span>{{ appConfig.devName }}</span>
+        </h4>
+        <h4>
+          Age: <span>{{ appConfig.age }} </span>
         </h4>
         <h4>
           Location:
           <span>
-            <a target="_blank" href="https://goo.gl/maps/qfSY6ZsXDyL1DLs39"
-              >Nawnghkio, Myanmar</a
-            >
+            <a target="_blank" :href="appConfig.location.link">{{
+              appConfig.location.address
+            }}</a>
           </span>
         </h4>
         <h4>
           Email:
           <span>
-            <a
-              href="mailto:user@example.com?subject=Subject&body=message%20goes%20here"
-              >nandar.dev.mgk@gmail.com</a
-            >
+            <a :href="'mailto:' + appConfig.contact.email">{{
+              appConfig.contact.email
+            }}</a>
           </span>
         </h4>
-        <h4>Phone: <span>+95926455544</span></h4>
+        <h4>
+          Phone:
+          <span>
+            <a :href="'tel:' + '+959960160802'">{{
+              appConfig.contact.phone
+            }}</a>
+          </span>
+        </h4>
       </div>
     </div>
 
     <p>
-      Hello, I'm [Your Name], a passionate and experienced web developer with
-      [Number of years] of experience in creating responsive and user-friendly
-      websites. My expertise lies in front-end web development, and I specialize
-      in using HTML, CSS, and JavaScript to build beautiful and functional
-      websites that engage users and meet business objectives. My passion for
-      web development began [when/how you got interested in web development].
-      <br />
-      <br />
-      Since then, I've had the opportunity to work on a wide range of projects
-      for clients in various industries, from small businesses to large
-      corporations. I'm dedicated to staying up-to-date with the latest trends
-      and technologies in the field, and I enjoy the challenge of solving
-      complex problems and finding innovative solutions. In my free time, I
-      enjoy [hobbies or interests related to web development or technology]. I
-      believe that a strong work-life balance is essential to maintaining
-      creativity and productivity, and I'm always looking for new ways to
-      improve my skills and grow as a developer. If you're looking for a skilled
-      and reliable web developer who is passionate about creating websites that
-      are both beautiful and functional, please feel free to get in touch. I'm
-      always excited to hear about new projects and collaborate with like-minded
-      individuals.
+      Hello, I'm Nandar, a passionate and experienced web developer with 2 years
+      of experience in creating responsive and user-friendly websites. My
+      expertise lies in front-end web development, and I specialize in using
+      HTML, CSS, and JavaScript to build beautiful and functional websites that
+      engage users and meet business objectives.
     </p>
+
+    <div class="socials">
+      <a target="_blank" :href="appConfig.social.github">
+        <Icon icon="mdi:github" />
+      </a>
+
+      <a target="_blank" :href="appConfig.social.linkedin">
+        <Icon icon="ri:linkedin-fill" />
+      </a>
+
+      <a target="_blank" :href="appConfig.social.twitter">
+        <Icon icon="mdi:twitter" />
+      </a>
+
+      <a target="_blank" :href="appConfig.social.facebook">
+        <Icon icon="mdi:facebook" />
+      </a>
+
+      <a target="_blank" :href="appConfig.social.instagram">
+        <Icon icon="mdi:instagram" />
+      </a>
+    </div>
   </section>
 </template>
 
 <script lang="ts">
+import appConfig from "~~/utils/appConfig";
+
 export default {
   setup() {
-    const getAge = () => {
-      const now = new Date();
-      const birthDaay = new Date("2000-10-14");
-      var dateDiffInTime = now.getTime() - birthDaay.getTime();
-      var dateDiffInYear = dateDiffInTime / (1000 * 3600 * 24 * 365);
-      return Math.floor(dateDiffInYear);
-    };
-
-    getAge();
     return {
-      getAge,
+      appConfig,
     };
   },
 };
@@ -76,6 +86,7 @@ export default {
 
 <style lang="scss" scoped>
 .about {
+  margin-top: var(--section-margin);
   h1 {
     text-align: center;
     font-size: var(--section-title-font-size);
@@ -86,12 +97,13 @@ export default {
   .img-content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 50px;
-    height: 300px;
 
     .info {
       display: flex;
+      flex-wrap: wrap;
       row-gap: 20px;
       flex-direction: column;
       justify-content: space-between;
@@ -104,8 +116,48 @@ export default {
       }
     }
   }
-  img {
-    width: 300px;
+
+  .wrapper {
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    border-radius: 50%;
+    background-color: var(--image-color);
+    height: var(--about-img-size);
+    width: var(--about-img-size);
+
+    img {
+      width: var(--about-img-size);
+      height: var(--about-img-size);
+      border-radius: 50%;
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1);
+    }
+    &:hover {
+      background-color: transparent;
+
+      img {
+        filter: none;
+        mix-blend-mode: normal;
+      }
+    }
+  }
+
+  p {
+    margin-top: 35px;
+    color: var(--text-black-color);
+    text-align: center;
+  }
+
+  .socials {
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: calc(var(--nav-icon-size) + 0.3rem);
+    a {
+      color: var(--icon-color);
+    }
   }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav>
-      <a class="logo" href="#home">Nandar</a>
+      <a class="logo" href="#home">{{ appConfig.devName }}</a>
       <div class="right-link">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -25,17 +25,15 @@
         </div>
 
         <div class="socials">
-          <a target="_blank" href="https://github.com/nandar-dev/">
+          <a target="_blank" :href="appConfig.social.github">
             <Icon icon="mdi:github" />
           </a>
 
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/nandar-ghimire-3951b91b1/">
+          <a target="_blank" :href="appConfig.social.linkedin">
             <Icon icon="ri:linkedin-fill" />
           </a>
 
-          <a target="_blank" href="https://twitter.com/nanda2000dev">
+          <a target="_blank" :href="appConfig.social.twitter">
             <Icon icon="mdi:twitter" />
           </a>
         </div>
@@ -99,6 +97,7 @@
 <script lang="ts">
 import { getTheme, theme, switchTheme } from "./../utils/theme";
 import { TransitionSlide } from "@morev/vue-transitions";
+import appConfig from "~~/utils/appConfig";
 
 if (process.client) {
   let header = document.querySelector("header");
@@ -123,6 +122,7 @@ export default {
       switchTheme,
       panelVisible,
       showMenu,
+      appConfig,
     };
   },
 };
@@ -175,11 +175,12 @@ export default {
 }
 
 .shadow {
-  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+  box-shadow: var(--nav-box-shadow);
 }
 
 header {
   position: fixed;
+  z-index: 100;
   width: 100%;
   top: 0;
   backdrop-filter: blur(var(--navbar-blur));
@@ -200,7 +201,7 @@ header {
 
     .logo {
       font-family: "Oleo Script Swash Caps", cursive;
-      font-size: 1.7rem;
+      font-size: var(--logo-font-size);
       font-weight: bold;
       color: var(--main-color);
     }

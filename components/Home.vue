@@ -29,12 +29,15 @@
 <style lang="scss">
 .home {
   height: 100vh;
+  padding-top: var(--navbar-height);
   display: flex;
+  flex-wrap: wrap-reverse;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
 
   .info {
+    flex: 1;
     h4 {
       font-weight: normal;
       font-size: 1.5rem;
@@ -62,9 +65,12 @@
     }
   }
 
-  img {
-    width: 100%;
-    min-width: 600px;
+  .image {
+    flex: 0.5;
+    img {
+      width: 100%;
+      min-width: 600px;
+    }
   }
 }
 
@@ -98,7 +104,7 @@
     width: 4px;
     margin-left: -2px;
     height: 4px;
-    border-radius: 4px;
+    border-radius: var(--base-border-radius);
     background: var(--text-grey-color);
     -webkit-animation: mouseScroll 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite
       alternate;
@@ -114,7 +120,7 @@
     margin-left: -2px;
     height: 4px;
     background: #aaa;
-    border-radius: 4px;
+    border-radius: var(--base-border-radius);
     -webkit-animation: mouseScroll 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite
       alternate;
     animation: mouseScroll 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite alternate;
@@ -152,12 +158,13 @@
 @media screen and (max-width: 768px) {
   .home {
     height: unset;
-    margin-top: calc(var(--navbar-height) + 30px);
     justify-content: start;
 
-    img {
-      min-width: unset;
-      max-width: 600px;
+    .image {
+      img {
+        min-width: unset;
+        max-width: 600px;
+      }
     }
   }
 
