@@ -1,5 +1,7 @@
 <template>
   <section class="container contact" id="contact">
+    <h1 class="section-title">Get In Touch</h1>
+
     <div class="contact-container">
       <form
         action="https://formsubmit.co/5aa9fcc8ff2ba952bdd6ae1c0280ab9a"

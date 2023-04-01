@@ -6,9 +6,9 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#home">Skill</a></li>
-          <li><a href="#home">Project</a></li>
-          <li><a href="#home">Contact</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
         <div class="theme">
@@ -52,10 +52,10 @@
       <div class="menu-content">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#home">About</a></li>
-          <li><a href="#home">Skill</a></li>
-          <li><a href="#home">Project</a></li>
-          <li><a href="#home">Contect</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li class="preference">
             <h4>Preference</h4>
 
@@ -204,6 +204,9 @@ header {
       font-size: var(--logo-font-size);
       font-weight: bold;
       color: var(--main-color);
+      &:hover {
+        color: var(--main-color) !important;
+      }
     }
 
     .right-link {

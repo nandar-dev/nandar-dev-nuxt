@@ -1,6 +1,6 @@
 <template>
   <section class="container about" id="about">
-    <h1>Who am I?</h1>
+    <h1 class="section-title">Who am I?</h1>
     <div class="img-content">
       <div class="wrapper">
         <img src="./../assets/images/nd.png" alt="" />
@@ -87,12 +87,6 @@ export default {
 <style lang="scss" scoped>
 .about {
   margin-top: var(--section-margin);
-  h1 {
-    text-align: center;
-    font-size: var(--section-title-font-size);
-    color: var(--section-title-color);
-    padding-bottom: 50px;
-  }
 
   .img-content {
     display: flex;

@@ -1,14 +1,15 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 :root {
   --main-color: #3f3d56;
   --bg-color: #fff;
   --link-hover-color: #7066e2;
   --divider-color: rgba(60, 60, 67, 0.12);
   --icon-color: #737171;
-  --text-grey-color: #737171;
+  // --text-grey-color: #737171;
+  --text-grey-color: rgb(102, 116, 139);
   --text-white-color: #fff;
   --section-title-color: #7066e2;
   --image-color: #b3acff;
@@ -17,10 +18,11 @@
   --base-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --nav-box-shadow: 0 0 4px rgb(14 55 54 / 15%);
   --input-bg-color: hsla(260, 100%, 44%, 0.1);
+  --gray-bg-color: rgb(229, 231, 235);
 
   --max-width: 1440px;
   --about-img-size: 300px;
-  --section-margin: 50px;
+  --section-margin: 70px;
 
   --logo-font-size: 1.7rem;
   --section-title-font-size: 2rem;
@@ -110,6 +112,13 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   color: var(--text-grey-color);
+}
+
+.section-title {
+  text-align: center;
+  font-size: var(--section-title-font-size);
+  color: var(--section-title-color);
+  padding-bottom: 50px;
 }
 
 .container {

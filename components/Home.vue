@@ -10,7 +10,7 @@
         taking on new challenges and staying up to date with the latest
         technologies and trends in the industry.
       </p>
-      <button>Resume</button>
+      <button><a target="_blank" href="./../assets/pdf/nandar's_resume.pdf">Resume</a></button>
     </div>
     <div class="image">
       <img src="./../assets/images/home-img.svg" alt="Home Image" />
@@ -62,6 +62,12 @@
 
     button {
       margin-top: 20px;
+      a{
+        color: #fff;
+        &:hover{
+          color: #fff !important;
+        }
+      }
     }
   }
 
