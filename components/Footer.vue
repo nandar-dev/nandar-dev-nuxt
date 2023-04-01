@@ -8,7 +8,7 @@
 
 <style lang="scss" scoped>
 footer {
-    margin-top: var(--section-margin);
+  margin-top: var(--section-margin);
   padding: 18px;
   background: var(--main-color);
   color: #fff;

@@ -4,7 +4,7 @@
       <h4>Hello, I'm</h4>
       <h1>NANDAR</h1>
       <h2>Web Developer</h2>
-      <p>
+      <p class="sub-text">
         I am a passionate web developer with a strong focus on delivering high
         quality websites that are visually appealing and user friendly. I enjoy
         taking on new challenges and staying up to date with the latest
@@ -56,9 +56,6 @@
       margin-top: -15px !important;
       color: var(--main-color);
     }
-    p {
-      color: var(--text-grey-color);
-    }
 
     button {
       margin-top: 20px;
@@ -91,7 +88,6 @@
     display: flex;
     align-items: center;
     font-size: 1rem;
-    color: var(--text-color);
   }
 }
 

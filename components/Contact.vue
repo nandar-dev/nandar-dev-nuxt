@@ -6,8 +6,8 @@
       <form
         action="https://formsubmit.co/5aa9fcc8ff2ba952bdd6ae1c0280ab9a"
         method="POST">
-        <h1>Message me</h1>
-        <div class="sub-heading">
+        <h2 class="content-title">Message me</h2>
+        <div class="sub-text">
           Please feel free to contact me any time. Will get back to you as soon
           as I can.
         </div>
@@ -62,15 +62,12 @@
       padding: 24px 32px;
       border-radius: 10px;
 
-      h1 {
+      .content-title {
         font-size: var(--section-title-font-size);
-        color: var(--main-color);
         margin-bottom: 10px;
       }
-      .sub-heading {
+      .sub-text {
         margin-bottom: 40px;
-        color: var(--text-grey-color);
-        font-size: 15px;
       }
 
       .contact-grid {

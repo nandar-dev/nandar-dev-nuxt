@@ -6,14 +6,14 @@
         <!-- <img src="https://picsum.photos/200/300?random=1" alt="Card Image" /> -->
         <div class="card-content">
           <div class="header">
-            <h2>Title</h2>
+            <h2 class="content-title">Title</h2>
             <div class="links">
               <a href=""><Icon icon="mdi:github" /></a>
 
               <a href=""><Icon icon="ph:link-simple-bold" /></a>
             </div>
           </div>
-          <p class="card-description">
+          <p class="sub-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
             perspiciatis magni nemo officia, at quibusdam impedit ipsa doloribus
             aperiam?
@@ -71,9 +71,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        h2 {
-          color: var(--main-color);
-          font-size: 24px;
+        .content-title {
           margin-bottom: 10px;
         }
         .links {
@@ -81,9 +79,7 @@
         }
       }
 
-      p {
-        color: var(--text-grey-color);
-        font-size: 16px;
+      .sub-text {
         margin-bottom: 20px;
       }
       .card-tags {
@@ -100,6 +96,14 @@
           font-family: "Source Code Pro", monospace;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .projects {
+    .list {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
   }
 }

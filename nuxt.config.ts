@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       link: [
         {
           rel: "stylesheet",
-          href: "https://unicons.iconscout.com/release/v4.0.0/css/line.css",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css",
         },
       ],
     },
