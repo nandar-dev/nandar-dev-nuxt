@@ -7,7 +7,7 @@
         <h2 class="content-title">{{ jobs.companyName }}</h2>
         <ul class="sub-text">
           <li v-for="resp in jobs.responsibility">
-            {{ resp }}
+            {{ resp }} 
           </li>
         </ul>
       </div>
