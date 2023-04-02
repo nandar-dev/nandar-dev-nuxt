@@ -6,7 +6,8 @@ export default defineNuxtConfig({
       meta: [
         {
           name: "description",
-          content: "Web Developer",
+          content:
+            "I am a passionate web developer with a strong focus on delivering high quality websites that are visually appealing and user friendly. I enjoy taking on new challenges and staying up to date with the latest technologies and trends in the industry.",
         },
         {
           name: "author",
@@ -15,13 +16,17 @@ export default defineNuxtConfig({
         {
           name: "keywords",
           content:
-            "portfolio, web development, vue, nandar, web developer, myanmar",
+            "portfolio, web development, vue, nandar, nanda, frontend developer, software developer, web developer, nawnghkio, naungcho, myanmar",
         },
       ],
       link: [
         {
           rel: "stylesheet",
           href: "https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css",
         },
       ],
     },

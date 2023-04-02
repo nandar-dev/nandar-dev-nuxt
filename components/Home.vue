@@ -1,5 +1,5 @@
 <template>
-  <section class="container home" id="home">
+  <section class="home" id="home">
     <div class="info">
       <h4>Hello, I'm</h4>
       <h1>NANDAR</h1>
@@ -26,7 +26,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .home {
   height: 100vh;
   padding-top: var(--navbar-height);
@@ -80,10 +80,7 @@
 .scroll-down {
   position: absolute;
   bottom: 4rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
+  left: 50%;
   a {
     display: flex;
     align-items: center;

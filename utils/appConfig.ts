@@ -93,6 +93,81 @@ const appConfig = {
       },
     ],
   },
+  skills: {
+    summery: [
+      {
+        name: "Front-End",
+        progress: "70%",
+      },
+      {
+        name: "Back-End",
+        progress: "50%",
+      },
+    ],
+    technologies: {
+      main: [
+        {
+          name: "Typescript.js",
+          icon: "devicon-typescript-plain colored",
+        },
+        {
+          name: "Vue.js",
+          icon: "devicon-vuejs-plain colored",
+        },
+        {
+          name: "Nuxt.js",
+          icon: "devicon-nuxtjs-plain colored",
+        },
+        {
+          name: "Tailwind",
+          icon: "devicon-tailwindcss-plain colored",
+        },
+        {
+          name: "Node.js",
+          icon: "devicon-nodejs-plain colored",
+        },
+        {
+          name: "Express.js",
+          icon: "devicon-express-original",
+        },
+
+        {
+          name: "MySql",
+          icon: "devicon-mysql-plain colored",
+        },
+      ],
+      famailiar: [
+        {
+          name: "Python",
+          icon: "devicon-python-plain colored",
+        },
+        {
+          name: "Angular",
+          icon: "devicon-angularjs-plain colored",
+        },
+        {
+          name: "React.js",
+          icon: "devicon-react-original colored",
+        },
+        {
+          name: "Flutter",
+          icon: "devicon-flutter-plain colored",
+        },
+        {
+          name: "Firebase",
+          icon: "devicon-firebase-plain colored",
+        },
+        {
+          name: "AWS",
+          icon: "devicon-amazonwebservices-original colored",
+        },
+        {
+          name: "PostgreSQL",
+          icon: "devicon-postgresql-plain colored",
+        },
+      ],
+    },
+  },
 };
 
 export default appConfig;

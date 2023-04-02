@@ -1,5 +1,5 @@
 <template>
-  <section class="container experience" id="experience">
+  <section class="experience" id="experience">
     <h1 class="section-title">Experiences</h1>
     <div class="timeline">
       <div v-for="jobs in appConfig.experience" class="content-card">

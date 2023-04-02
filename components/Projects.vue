@@ -1,5 +1,5 @@
 <template>
-  <section class="container projects" id="projects">
+  <section class="projects" id="projects">
     <h1 class="section-title">My Projects</h1>
     <div class="list">
       <div v-for="item in 6" class="card">
