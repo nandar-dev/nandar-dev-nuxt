@@ -102,7 +102,7 @@ export default {
           .icon {
             display: flex;
             justify-content: flex-end;
-            font-size: 1.4rem;
+            font-size: 2rem;
           }
         }
       }

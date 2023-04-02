@@ -58,7 +58,7 @@ export default {
         margin-bottom: 0;
 
         &::after {
-          @include cardAfter(80%);
+          @include cardAfter(calc(100% - 15%));
         }
       }
 
