@@ -53,11 +53,7 @@
   }
 
   .card {
-    border-radius: 8px;
-    background-color: var(--card-bg-color);
-    box-shadow: var(--base-box-shadow);
-    overflow: hidden;
-    padding: 18px;
+    padding: var(--base-content-padding);
 
     img {
       width: 100%;

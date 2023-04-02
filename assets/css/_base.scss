@@ -34,6 +34,7 @@
   --base-lr-padding: 30px; // base left right padding
   --border-radious-regular: 3px;
   --base-border-radius: 4px;
+  --base-content-padding: 18px;
 
   //nav bar
   --navbar-link-color: #000;
@@ -115,6 +116,13 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   color: var(--text-grey-color);
+}
+
+.card {
+  border-radius: 8px;
+  background-color: var(--card-bg-color);
+  box-shadow: var(--base-box-shadow);
+  overflow: hidden;
 }
 
 .section-title {

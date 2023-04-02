@@ -51,6 +51,48 @@ const appConfig = {
       ],
     },
   ],
+  education: {
+    school: [
+      {
+        name: "Mogok Foundation",
+        profession: "Professional Computer Programming",
+        from: "January 2019",
+        to: "January 2021",
+        courses: [
+          " Basic programming with Java.",
+          "Fundamental web development with HTML, CSS, JavaScript, Bootstrap, jQuery and Angular.",
+          "Mobile app development with Ionic 3 and Flutter.",
+        ],
+      },
+    ],
+    certificateCourse: [
+      {
+        name: "Crash Course on Python",
+        icon: "arcticons:coursera",
+        link: "https://www.coursera.org/account/accomplishments/certificate/C64FU6FFSNT2",
+      },
+      {
+        name: "Responsive Web Design",
+        icon: "simple-icons:freecodecamp",
+        link: "https://www.freecodecamp.org/certification/fcc34bb36ad-2033-48f2-ad0d-db030c571871/responsive-web-design",
+      },
+      {
+        name: "JavaScript Algorithms and Data Structures",
+        icon: "simple-icons:freecodecamp",
+        link: "https://www.freecodecamp.org/certification/fcc34bb36ad-2033-48f2-ad0d-db030c571871/javascript-algorithms-and-data-structures",
+      },
+      {
+        name: "Front-End Web Development with React",
+        icon: "arcticons:coursera",
+        link: "https://www.coursera.org/account/accomplishments/certificate/9W3EV4DXBW55",
+      },
+      {
+        name: "NodeJS, Express and MongoDB",
+        icon: "arcticons:coursera",
+        link: "https://www.coursera.org/account/accomplishments/certificate/BACCMJHMQXFK",
+      },
+    ],
+  },
 };
 
 export default appConfig;

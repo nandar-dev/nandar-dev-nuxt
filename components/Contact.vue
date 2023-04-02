@@ -4,6 +4,7 @@
 
     <div class="contact-container">
       <form
+        class="card"
         action="https://formsubmit.co/5aa9fcc8ff2ba952bdd6ae1c0280ab9a"
         method="POST">
         <h2 class="content-title">Message me</h2>
@@ -57,10 +58,8 @@
       width: 100%;
       max-width: 400px;
       margin: 0 auto 0;
-      background-color: var(--card-bg-color);
-      box-shadow: var(--base-box-shadow);
       padding: 24px 32px;
-      border-radius: 10px;
+      // border-radius: 10px;
 
       .content-title {
         font-size: var(--section-title-font-size);

@@ -70,6 +70,8 @@
       </a>
     </div>
   </section>
+
+  <Education />
 </template>
 
 <script lang="ts">

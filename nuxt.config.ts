@@ -2,11 +2,20 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Nandar",
+      title: "Nandar | Web Developer",
       meta: [
         {
           name: "description",
           content: "Web Developer",
+        },
+        {
+          name: "author",
+          content: "Nandar",
+        },
+        {
+          name: "keywords",
+          content:
+            "portfolio, web development, vue, nandar, web developer, myanmar",
         },
       ],
       link: [

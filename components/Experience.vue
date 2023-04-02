@@ -2,7 +2,7 @@
   <section class="container experience" id="experience">
     <h1 class="section-title">Experiences</h1>
     <div class="timeline">
-      <div v-for="jobs in appConfig.experience" class="card">
+      <div v-for="jobs in appConfig.experience" class="content-card">
         <h5>{{ jobs.from }} - {{ jobs.to }}</h5>
         <h2 class="content-title">{{ jobs.companyName }}</h2>
         <ul class="sub-text">
@@ -46,10 +46,10 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .card {
+    .content-card {
       width: 100%;
       max-width: 800px;
-      padding: 20px;
+      padding: 20px 20px 0 20px;
       border-radius: 8px;
       position: relative;
       margin-bottom: 20px;
@@ -83,11 +83,14 @@ export default {
       }
 
       h5 {
+        font-weight: 500;
         color: var(--text-grey-color);
       }
       ul {
         li {
           list-style: disc;
+        margin-left: var(--base-content-padding);
+
         }
       }
     }
