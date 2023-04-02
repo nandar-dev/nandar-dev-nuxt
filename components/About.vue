@@ -1,5 +1,5 @@
 <template>
-  <section class="container about" id="about">
+  <section class="about" id="about">
     <h1 class="section-title">Who am I?</h1>
     <div class="img-content">
       <div class="wrapper">
@@ -72,6 +72,7 @@
   </section>
 
   <Education />
+  <Skill />
 </template>
 
 <script lang="ts">

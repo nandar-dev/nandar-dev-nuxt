@@ -1,5 +1,5 @@
 <template>
-  <section class="container education">
+  <section class="education">
     <h1 class="section-title">Education</h1>
 
     <div class="list">
@@ -20,7 +20,7 @@
 
       <div class="card">
         <div class="item">
-          <h2 class="content-title">Certificate Course</h2>
+          <h2 class="content-title">Certificate Courses</h2>
           <div class="certificates">
             <template
               v-for="certificate in appConfig.education.certificateCourse">
@@ -85,7 +85,7 @@ export default {
       }
 
       .certificates {
-        margin-top: 10px;
+        margin-top: 15px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 30px;
@@ -108,7 +108,7 @@ export default {
       }
     }
     .card:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
   }
 }
