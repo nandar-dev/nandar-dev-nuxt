@@ -9,7 +9,7 @@ export enum theme {
 
 const getSystemDefaultTheme = () => {
   const isDark = usePreferredDark();
-  if (isDark) {
+  if (isDark.value) {
     return theme.dark;
   } else {
     return theme.light;

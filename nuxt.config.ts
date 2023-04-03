@@ -52,7 +52,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "@/assets/images/nd.png",
+          content: "/NDLogo.png",
         },
         {
           name: "twitter:card",
@@ -68,7 +68,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "@/assets/images/nd.png",
+          content: "/NDLogo.png",
         },
       ],
       link: [
