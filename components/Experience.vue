@@ -7,7 +7,7 @@
         <h2 class="content-title">{{ jobs.companyName }}</h2>
         <ul class="sub-text">
           <li v-for="resp in jobs.responsibility">
-            {{ resp }} 
+            {{ resp }}
           </li>
         </ul>
       </div>
@@ -46,6 +46,8 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 var(--base-lr-padding);
+
     .content-card {
       width: 100%;
       max-width: 800px;
@@ -89,8 +91,7 @@ export default {
       ul {
         li {
           list-style: disc;
-        margin-left: var(--base-content-padding);
-
+          margin-left: var(--base-content-padding);
         }
       }
     }

@@ -16,7 +16,7 @@
   --text-black-color: #000;
   --base-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --nav-box-shadow: 0 0 4px rgb(14 55 54 / 15%);
-  --input-bg-color: hsla(260, 100%, 44%, 0.1);
+  --input-bg-color: rgb(229, 231, 235);
   --gray-bg-color: rgb(229, 231, 235);
   --stepper-divider-color: #b8b8b8;
   --content-title: #3f3d56;
@@ -29,6 +29,8 @@
   --section-title-font-size: 2rem;
   --content-title-font-size: 1.6rem;
   --sub-text-font-size: 1.05rem;
+  --dev-name-home: 4.5rem;
+  --profession-name-home: 2.5rem;
 
   --base-transaction: 0.4s;
   --base-lr-padding: 30px; // base left right padding
@@ -153,5 +155,13 @@ textarea::placeholder {
   .container {
     width: 100%;
     flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  :root {
+    --dev-name-home: 3.8rem;
+    --profession-name-home: 2rem;
+    --about-img-size: 250px;
   }
 }
