@@ -168,6 +168,32 @@ const appConfig = {
       ],
     },
   },
+  projects: [
+    {
+      name: "JobDotCom",
+      description:
+        "Basic CRUD operation , filter and sorting with Vant UI 3 and Typescript.",
+      gitLink: "https://github.com/nandar-dev/JobDotCom",
+      demoLink: "https://jobdotcom.netlify.app/",
+      technologies: ["Typescript", "Vue.js", "Vant 3"],
+      screenshots: "",
+    },
+    {
+      name: "jwt-auth-nodejs-typeorm",
+      description:
+        "Jwt authentication with Node.js express, Type Orm, Postgres.",
+      gitLink: "https://github.com/nandar-dev/jwt-auth-nodejs-typeorm",
+      demoLink: "",
+      technologies: [
+        "Typescript",
+        "Node.js",
+        "Express.js",
+        "Type ORM",
+        "Postgres",
+      ],
+      screenshots: "",
+    },
+  ],
 };
 
 export default appConfig;

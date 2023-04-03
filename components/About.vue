@@ -3,7 +3,7 @@
     <h1 class="section-title">Who am I?</h1>
     <div class="img-content">
       <div class="wrapper">
-        <img src="./../assets/images/nd.png" alt="" />
+        <img src="./../assets/images/nd.png" alt="Nandar" />
       </div>
 
       <div class="info">
@@ -41,11 +41,25 @@
     </div>
 
     <p>
-      Hello, I'm Nandar, a passionate and experienced web developer with 2 years
-      of experience in creating responsive and user-friendly websites. My
-      expertise lies in front-end web development, and I specialize in using
-      HTML, CSS, and JavaScript to build beautiful and functional websites that
-      engage users and meet business objectives.
+      Hi there, I'm a web developer with a focus on front-end development, I am
+      passionate about creating user-friendly interfaces and engaging digital
+      experiences. Although I didn't pursue a formal degree in computer science
+      or web development, I discovered my love for programming during my first
+      year of college while studying philosophy.
+
+      <br /><br />
+      Since then, I've been honing my skills through various avenues, including
+      online courses, personal projects, and most notably, a Professional
+      Computer Programming course at the non-profit organization, Mogok
+      Foundation. This course provided me with hands-on experience in the
+      fundamentals of programming, as well as exposure to the latest
+      technologies and industry best practices.
+
+      <br /><br />
+      When I'm not coding, you can find me reading about the latest web
+      development trends, exploring new programming languages, or tinkering with
+      personal projects. I'm always eager to learn and grow as a developer, and
+      I'm excited to see where my journey takes me next.
     </p>
 
     <div class="socials">
