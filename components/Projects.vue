@@ -2,35 +2,44 @@
   <section class="projects" id="projects">
     <h1 class="section-title">My Projects</h1>
     <div class="list">
-      <div v-for="item in 6" class="card">
-        <!-- <img src="https://picsum.photos/200/300?random=1" alt="Card Image" /> -->
+      <div v-for="project in appConfig.projects" class="card">
+        <img
+          v-if="project.screenshots"
+          :src="project.screenshots"
+          alt="Project Image" />
         <div class="card-content">
           <div class="header">
-            <h2 class="content-title">Title</h2>
+            <h2 class="content-title">{{ project.name }}</h2>
             <div class="links">
-              <a href=""><Icon icon="mdi:github" /></a>
+              <a v-if="project.gitLink" :href="project.gitLink"
+                ><Icon icon="mdi:github"
+              /></a>
 
-              <a href=""><Icon icon="ph:link-simple-bold" /></a>
+              <a v-if="project.demoLink" :href="project.demoLink"
+                ><Icon icon="ph:link-simple-bold"
+              /></a>
             </div>
           </div>
           <p class="sub-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
-            perspiciatis magni nemo officia, at quibusdam impedit ipsa doloribus
-            aperiam?
+            {{ project.description }}
           </p>
           <div class="card-tags">
-            <span>Vue.js</span>
-            <span>Typescipt</span>
-            <span>Tailwind</span>
-            <span>Vue.js</span>
-            <span>Typescipt</span>
-            <span>Tailwind</span><span>Vue.js</span>
+            <span v-for="tech in project.technologies">{{ tech }}</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script lang="ts">
+import appConfig from "~~/utils/appConfig";
+export default {
+  setup() {
+    return { appConfig };
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 @mixin socialIcon($gap: 15px) {
