@@ -5,12 +5,11 @@
       <h1>NANDAR</h1>
       <h2>Web Developer</h2>
       <p class="sub-text">
-        I am a passionate web developer with a strong focus on delivering high
-        quality websites that are visually appealing and user friendly. I enjoy
-        taking on new challenges and staying up to date with the latest
-        technologies and trends in the industry.
+        {{ appConfig.devDescription }}
       </p>
-      <button><a target="_blank" href="./../assets/pdf/nandar's_resume.pdf">Resume</a></button>
+      <button>
+        <a target="_blank" href="/pdf/nandar's_resume.pdf">Resume</a>
+      </button>
     </div>
     <div class="image">
       <img src="./../assets/images/home-img.svg" alt="Home Image" />
@@ -25,6 +24,17 @@
     </a>
   </div>
 </template>
+
+<script lang="ts">
+import appConfig from "~~/utils/appConfig";
+export default {
+  setup() {
+    return {
+      appConfig,
+    };
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .home {
@@ -44,7 +54,7 @@
       color: var(--text-grey-color);
     }
     h1 {
-      font-size: 4.5rem;
+      font-size: var(--dev-name-home);
       margin-top: -8px !important;
       background: -webkit-linear-gradient(120deg, #7066e2 30%, #eb9bee);
       -webkit-background-clip: text;
@@ -52,16 +62,16 @@
       -webkit-text-fill-color: transparent;
     }
     h2 {
-      font-size: 2.5rem;
+      font-size: var(--profession-name-home);
       margin-top: -15px !important;
       color: var(--main-color);
     }
 
     button {
       margin-top: 20px;
-      a{
+      a {
         color: #fff;
-        &:hover{
+        &:hover {
           color: #fff !important;
         }
       }
@@ -158,9 +168,11 @@
   .home {
     height: unset;
     justify-content: start;
+    flex-direction: column-reverse;
 
     .image {
       img {
+        width: 100%;
         min-width: unset;
         max-width: 600px;
       }

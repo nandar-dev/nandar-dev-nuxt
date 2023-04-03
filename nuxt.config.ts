@@ -1,25 +1,81 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import appConfig from "./utils/appConfig";
+
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Nandar | Web Developer",
+      title: appConfig.sitename,
       meta: [
         {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1.0",
+        },
+        {
+          charset: "utf-8",
+        },
+        {
+          property: "og:title",
+          content: appConfig.sitename,
+        },
+        {
           name: "description",
-          content:
-            "I am a passionate web developer with a strong focus on delivering high quality websites that are visually appealing and user friendly. I enjoy taking on new challenges and staying up to date with the latest technologies and trends in the industry.",
+          content: appConfig.devDescription,
         },
         {
           name: "author",
-          content: "Nandar",
+          content: appConfig.devName,
         },
         {
           name: "keywords",
-          content:
-            "portfolio, web development, vue, nandar, nanda, frontend developer, software developer, web developer, nawnghkio, naungcho, myanmar",
+          content: appConfig.devDescription,
+        },
+        {
+          property: "og:description",
+          content: appConfig.devDescription,
+        },
+        {
+          property: "og:type",
+          content: "website",
+        },
+        {
+          property: "og:locale",
+          content: "en_US",
+        },
+        {
+          property: "og:url",
+          content: appConfig.prodUrl,
+        },
+        {
+          property: "og:site:name",
+          content: appConfig.sitename,
+        },
+        {
+          property: "og:image",
+          content: "@/assets/images/nd.png",
+        },
+        {
+          name: "twitter:card",
+          content: "summary",
+        },
+        {
+          name: "twitter:title",
+          content: appConfig.sitename,
+        },
+        {
+          name: "twitter:description",
+          content: appConfig.devDescription,
+        },
+        {
+          name: "twitter:image",
+          content: "@/assets/images/nd.png",
         },
       ],
       link: [
+        {
+          rel: "canonical",
+          href: appConfig.prodUrl,
+        },
         {
           rel: "stylesheet",
           href: "https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css",
