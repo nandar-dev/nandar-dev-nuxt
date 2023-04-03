@@ -11,11 +11,11 @@
           <div class="header">
             <h2 class="content-title">{{ project.name }}</h2>
             <div class="links">
-              <a v-if="project.gitLink" :href="project.gitLink"
+              <a v-if="project.gitLink" target="_blank" :href="project.gitLink"
                 ><Icon icon="mdi:github"
               /></a>
 
-              <a v-if="project.demoLink" :href="project.demoLink"
+              <a v-if="project.demoLink" target="_blank" :href="project.demoLink"
                 ><Icon icon="ph:link-simple-bold"
               /></a>
             </div>

@@ -25,7 +25,7 @@ const appConfig = {
   social: {
     github: "https://github.com/nandar-dev/",
     linkedin: "https://www.linkedin.com/in/nandar-ghimire-3951b91b1/",
-    twitter: "https://twitter.com/nanda2000dev",
+    twitter: "https://twitter.com/nandar_dev",
     facebook: "https://www.facebook.com/mg.nandar.14/",
     instagram: "https://www.instagram.com/nanda_ghimire/",
   },
