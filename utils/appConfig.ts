@@ -111,7 +111,7 @@ const appConfig = {
     technologies: {
       main: [
         {
-          name: "Typescript.js",
+          name: "Typescript",
           icon: "devicon-typescript-plain colored",
         },
         {
