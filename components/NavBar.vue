@@ -104,7 +104,6 @@ if (process.client) {
   window.addEventListener("scroll", () => {
     header?.classList.toggle("shadow", window.scrollY > 0);
   });
-  console.log(window.scrollX, "scoll x");
 }
 
 export default {

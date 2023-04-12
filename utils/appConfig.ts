@@ -180,7 +180,7 @@ const appConfig = {
       gitLink: "https://github.com/nandar-dev/JobDotCom",
       demoLink: "https://jobdotcom.netlify.app/",
       technologies: ["Typescript", "Vue.js", "Vant 3"],
-      screenshots: "",
+      screenshots: "https://upload.wikimedia.org/wikipedia/commons/7/73/Jdc-ss1.png",
     },
     {
       name: "jwt-auth-nodejs-typeorm",
@@ -195,7 +195,8 @@ const appConfig = {
         "Type ORM",
         "Postgres",
       ],
-      screenshots: "",
+      screenshots:
+        "https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png",
     },
   ],
 };
