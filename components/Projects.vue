@@ -6,6 +6,8 @@
         <img
           v-if="project.screenshots"
           :src="project.screenshots"
+          onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png'"
+           loading="lazy"
           alt="Project Image" />
         <div class="card-content">
           <div class="header">
@@ -15,7 +17,10 @@
                 ><Icon icon="mdi:github"
               /></a>
 
-              <a v-if="project.demoLink" target="_blank" :href="project.demoLink"
+              <a
+                v-if="project.demoLink"
+                target="_blank"
+                :href="project.demoLink"
                 ><Icon icon="ph:link-simple-bold"
               /></a>
             </div>
@@ -36,7 +41,10 @@
 import appConfig from "~~/utils/appConfig";
 export default {
   setup() {
-    return { appConfig };
+    const onImageLoad = () => {
+      console.log("... on load");
+    };
+    return { onImageLoad, appConfig };
   },
 };
 </script>
