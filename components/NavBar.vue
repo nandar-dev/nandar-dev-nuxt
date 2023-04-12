@@ -184,7 +184,7 @@ header {
   width: 100%;
   top: 0;
   backdrop-filter: blur(var(--navbar-blur));
-  -webkit-backdrop-filter: blur(--navbar-blur);
+  -webkit-backdrop-filter: blur(var(--navbar-blur));
   background-color: var(--navbar-bg-color);
   transition: 0.5s;
 
@@ -248,6 +248,8 @@ header {
   z-index: 100;
   background-color: var(--menu-bg-color);
   backdrop-filter: blur(var(--menu-blur));
+  -webkit-backdrop-filter: blur(var(--menu-blur));
+
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
   .menu-content {
