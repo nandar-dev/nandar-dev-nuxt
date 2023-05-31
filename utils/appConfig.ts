@@ -111,16 +111,16 @@ const appConfig = {
     technologies: {
       main: [
         {
-          name: "Typescript",
-          icon: "devicon-typescript-plain colored",
-        },
-        {
           name: "Vue.js",
           icon: "devicon-vuejs-plain colored",
         },
         {
           name: "Nuxt.js",
           icon: "devicon-nuxtjs-plain colored",
+        },
+        {
+          name: "Typescript",
+          icon: "devicon-typescript-plain colored",
         },
         {
           name: "Tailwind",
@@ -179,8 +179,19 @@ const appConfig = {
         "Basic CRUD operation , filter and sorting with Vant UI 3 and Typescript.",
       gitLink: "https://github.com/nandar-dev/JobDotCom",
       demoLink: "https://jobdotcom.netlify.app/",
-      technologies: ["Typescript", "Vue.js", "Vant 3"],
-      screenshots: "https://upload.wikimedia.org/wikipedia/commons/7/73/Jdc-ss1.png",
+      technologies: ["Vue.js", "Typescript", "Vant 3"],
+      screenshots:
+        "https://upload.wikimedia.org/wikipedia/commons/7/73/Jdc-ss1.png",
+    },
+
+    {
+      name: "News Home Page",
+      description: "Design news home page using vue (Front-end Mentor)",
+      gitLink: "https://github.com/nandar-dev/vue-news-homepage",
+      demoLink: "https://news-home-frontend-mentor.netlify.app/",
+      technologies: ["Vue.js", "Typescript", "Tailwind"],
+      screenshots:
+        "https://github.com/nandar-dev/vue-news-homepage/raw/master/src/design/desktop-preview.jpg",
     },
     {
       name: "jwt-auth-nodejs-typeorm",
@@ -189,9 +200,9 @@ const appConfig = {
       gitLink: "https://github.com/nandar-dev/jwt-auth-nodejs-typeorm",
       demoLink: "",
       technologies: [
-        "Typescript",
         "Node.js",
         "Express.js",
+        "Typescript",
         "Type ORM",
         "Postgres",
       ],
