@@ -179,9 +179,19 @@ const appConfig = {
         "Basic CRUD operation , filter and sorting with Vant UI 3 and Typescript.",
       gitLink: "https://github.com/nandar-dev/JobDotCom",
       demoLink: "https://jobdotcom.netlify.app/",
-      technologies: [ "Vue.js","Typescript", "Vant 3"],
+      technologies: ["Vue.js", "Typescript", "Vant 3"],
       screenshots:
         "https://upload.wikimedia.org/wikipedia/commons/7/73/Jdc-ss1.png",
+    },
+
+    {
+      name: "News Home Page",
+      description: "Design news home page using vue (Front-end Mentor)",
+      gitLink: "https://github.com/nandar-dev/vue-news-homepage",
+      demoLink: "https://news-home-frontend-mentor.netlify.app/",
+      technologies: ["Vue.js", "Typescript", "Tailwind"],
+      screenshots:
+        "https://github.com/nandar-dev/vue-news-homepage/raw/master/src/design/desktop-preview.jpg",
     },
     {
       name: "jwt-auth-nodejs-typeorm",
@@ -198,18 +208,6 @@ const appConfig = {
       ],
       screenshots:
         "https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png",
-    },
-    {
-      name: "News Home Page",
-      description: "Design news home page using vue (Front-end Mentor)",
-      gitLink: "https://github.com/nandar-dev/vue-news-homepage",
-      demoLink: "",
-      technologies: [
-        "Vue.js",
-        "Typescript",
-        ],
-      screenshots:
-        "https://github.com/nandar-dev/vue-news-homepage/raw/master/src/design/desktop-preview.jpg",
     },
   ],
 };
