@@ -1,7 +1,5 @@
 # nandar-dev-nuxt
 
-![Project Banner](https://commons.wikimedia.org/wiki/File:Nanda%27s_Portfolio_preview.png)
-
 This repository contains the source code for the nandar-dev-nuxt project. The project is developed using Nuxt.js, a powerful Vue.js framework for building server-side rendered and static websites.
 
 ## Project Description
