@@ -181,7 +181,7 @@ const appConfig = {
       demoLink: "https://jobdotcom.netlify.app/",
       technologies: ["Vue.js", "Typescript", "Vant 3"],
       screenshots:
-        "https://upload.wikimedia.org/wikipedia/commons/7/73/Jdc-ss1.png",
+        "https://github.com/nandar-dev/JobDotCom/blob/master/src/assets/mockup.png",
     },
 
     {
