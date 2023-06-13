@@ -19,7 +19,7 @@ const appConfig = {
     address: "Nawnghkio, Myanmar",
   },
   contact: {
-    email: "nandar.dev.mgk@gmail.com",
+    email: "nandar.dev@outlook.com",
     phone: "+959960160802",
   },
   social: {
