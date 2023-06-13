@@ -181,9 +181,8 @@ const appConfig = {
       demoLink: "https://jobdotcom.netlify.app/",
       technologies: ["Vue.js", "Typescript", "Vant 3"],
       screenshots:
-        "https://github.com/nandar-dev/JobDotCom/blob/master/src/assets/mockup.png",
+        "https://raw.githubusercontent.com/nandar-dev/JobDotCom/master/src/assets/mockup.png",
     },
-
     {
       name: "News Home Page",
       description: "Design news home page using vue (Front-end Mentor)",
@@ -192,6 +191,15 @@ const appConfig = {
       technologies: ["Vue.js", "Typescript", "Tailwind"],
       screenshots:
         "https://github.com/nandar-dev/vue-news-homepage/raw/master/src/design/desktop-preview.jpg",
+    },
+    {
+      name: "Task Manager",
+      description: "Assignment Managment(mini) | Trying out element plus",
+      gitLink: "https://github.com/nandar-dev/Task-Manager",
+      demoLink: "https://assign-management.netlify.app/",
+      technologies: ["Vue.js", "Vuex","Element Plus"],
+      screenshots:
+        "https://raw.githubusercontent.com/nandar-dev/Task-Manager/master/src/assets/mockup.png",
     },
     {
       name: "jwt-auth-nodejs-typeorm",
