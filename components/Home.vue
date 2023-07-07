@@ -12,7 +12,14 @@
       </button>
     </div>
     <div class="image">
-      <img src="./../assets/images/home-img.svg" alt="Home Image" />
+      <!-- <img src="./../assets/images/home-img.svg" alt="Home Image" /> -->
+      <lottie-player
+        class="lottie"
+        autoplay
+        loop
+        src="https://lottie.host/cc41e5f8-71a6-4eb3-bc82-94969c05bfb8/1149Y7f28c.json"
+        speed="1"
+         />
     </div>
   </section>
   <div class="scroll-down">
@@ -23,6 +30,17 @@
       </div>
     </a>
   </div>
+  <lottie-animation
+    
+    path="./../assets/lottie/programming.json"
+    :loop="false"
+    :autoPlay="true"
+    :loopDelayMin="2.5"
+    :loopDelayMax="5"
+    :speed="1"
+    :width="256"
+    :height="256"
+   />
 </template>
 
 <script lang="ts">
@@ -80,7 +98,8 @@ export default {
 
   .image {
     flex: 0.5;
-    img {
+    img,
+    .lottie {
       width: 100%;
       min-width: 600px;
     }
@@ -171,7 +190,8 @@ export default {
     flex-direction: column-reverse;
 
     .image {
-      img {
+      img,
+      .lottie {
         width: 100%;
         min-width: unset;
         max-width: 600px;
