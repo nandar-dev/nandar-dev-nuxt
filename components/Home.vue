@@ -13,9 +13,18 @@
     </div>
     <div class="image">
       <!-- <img src="./../assets/images/home-img.svg" alt="Home Image" /> -->
+
       <LottieAnimation
-      class="lottie"
+        v-if="getTheme() === theme.light"
+        class="lottie"
         :animation-data="CodingJSON"
+        :auto-play="true"
+        :loop="true"
+        :speed="1" />
+      <LottieAnimation
+        v-else
+        class="lottie"
+        :animation-data="CodingDarkJSON"
         :auto-play="true"
         :loop="true"
         :speed="1" />
@@ -35,6 +44,8 @@
 import appConfig from "~~/utils/appConfig";
 import { LottieAnimation } from "lottie-web-vue";
 import CodingJSON from "~~/assets/lottie/coding.json";
+import CodingDarkJSON from "~~/assets/lottie/coding-dark.json";
+import { getTheme, theme } from "~~/utils/theme";
 
 export default {
   components: {
@@ -44,6 +55,9 @@ export default {
     return {
       appConfig,
       CodingJSON,
+      CodingDarkJSON,
+      getTheme,
+      theme,
     };
   },
 };
