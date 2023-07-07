@@ -3,11 +3,6 @@
 import appConfig from "./utils/appConfig";
 
 export default defineNuxtConfig({
-  vue: {
-    compilerOptions: {
-       isCustomElement: (tagName) => tagName === "lottie-player"
-    },
-  },
   app: {
     head: {
       title: appConfig.sitename,
