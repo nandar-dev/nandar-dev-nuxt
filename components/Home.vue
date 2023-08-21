@@ -110,7 +110,7 @@ export default {
     img,
     .lottie {
       width: 100%;
-      min-width: 550px;
+      min-width: 500px;
     }
   }
 }

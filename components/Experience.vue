@@ -4,7 +4,10 @@
     <div class="timeline">
       <div v-for="jobs in appConfig.experience" class="content-card">
         <h5>{{ jobs.from }} - {{ jobs.to }}</h5>
-        <h2 class="content-title">{{ jobs.companyName }}</h2>
+        <h2>
+          {{ jobs.companyName }}
+          <span class="position">{{ "(" + jobs.position + ")" }}</span>
+        </h2>
         <ul class="sub-text">
           <li v-for="resp in jobs.responsibility">
             {{ resp }}
@@ -83,7 +86,15 @@ export default {
       &::after {
         @include cardAfter();
       }
+      h2 {
+        color: var(--content-title);
+      }
+      .position {
+        font-weight: normal;
+        font-size: 19px;
+        font-weight: 600;
 
+      }
       h5 {
         font-weight: 500;
         color: var(--text-grey-color);

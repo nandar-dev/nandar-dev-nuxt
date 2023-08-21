@@ -31,7 +31,18 @@ const appConfig = {
   },
   experience: [
     {
-      companyName: "Unity Power Co.,LTD",
+      companyName: "ConceptX",
+      position: "Font-End Developer",
+      from: "2023 April",
+      to: "Present",
+      responsibility: [
+        "Maintain and updatန an existing Learning Management System, ensuring its functionality, user experience, and bug-free performance.",
+        "Developing responsive user interfaces of School Mangement System using Vue.js and Tailwind CSS.",
+        "Collaborate with senior developers to ensure code quality and adherence to best practices, receiving valuable feedback for improvement.",
+      ],
+    },
+    {
+      companyName: "Unity Power",
       position: "Font-End Developer",
       from: "2022 September",
       to: "2023 February",
@@ -197,7 +208,7 @@ const appConfig = {
       description: "Assignment Managment(mini) | Trying out element plus",
       gitLink: "https://github.com/nandar-dev/Task-Manager",
       demoLink: "https://assign-management.netlify.app/",
-      technologies: ["Vue.js", "Vuex","Element Plus"],
+      technologies: ["Vue.js", "Vuex", "Element Plus"],
       screenshots:
         "https://raw.githubusercontent.com/nandar-dev/Task-Manager/master/src/assets/mockup.png",
     },

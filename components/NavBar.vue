@@ -195,7 +195,6 @@ header {
     padding: 15px var(--base-lr-padding);
     box-sizing: border-box;
     width: 100%;
-    max-width: var(--max-width);
     margin: auto;
 
     .logo {
