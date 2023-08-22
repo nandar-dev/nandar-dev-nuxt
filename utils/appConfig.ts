@@ -36,7 +36,7 @@ const appConfig = {
       from: "2023 April",
       to: "Present",
       responsibility: [
-        "Maintain and updatန an existing Learning Management System, ensuring its functionality, user experience, and bug-free performance.",
+        "Maintain and update an existing Learning Management System, ensuring its functionality, user experience, and bug-free performance.",
         "Developing responsive user interfaces of School Mangement System using Vue.js and Tailwind CSS.",
         "Collaborate with senior developers to ensure code quality and adherence to best practices, receiving valuable feedback for improvement.",
       ],
