@@ -32,7 +32,7 @@ const appConfig = {
   experience: [
     {
       companyName: "ConceptX",
-      position: "Font-End Developer",
+      position: "Front-End Developer",
       from: "2023 April",
       to: "Present",
       responsibility: [
@@ -43,7 +43,7 @@ const appConfig = {
     },
     {
       companyName: "Unity Power",
-      position: "Font-End Developer",
+      position: "Front-End Developer",
       from: "2022 September",
       to: "2023 February",
       responsibility: [
