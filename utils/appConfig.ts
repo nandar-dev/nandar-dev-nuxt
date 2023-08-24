@@ -13,7 +13,7 @@ const appConfig = {
   devDescription:
     "I am a passionate web developer with a strong focus on delivering high quality websites that are visually appealing and user friendly. I enjoy taking on new challenges and staying up to date with the latest technologies and trends in the industry.",
   age: getAge(),
-  prodUrl: "https://nandar.tk",
+  prodUrl: "https://nandar.netlify.app",
   location: {
     link: "https://goo.gl/maps/qfSY6ZsXDyL1DLs39",
     address: "Nawnghkio, Myanmar",
