@@ -36,7 +36,7 @@ export default {
   top: 40px;
   left: -18px;
   height: $height;
-  background: var(--stepper-divider-color);
+  background: linear-gradient(var(--g-sepator-soft-color), var(--g-separator-primary-color), var(--g-separator-secondary-color), var(--g-separator-dark-color));
   width: 2px;
   border-radius: 3px;
 }
@@ -74,9 +74,9 @@ export default {
         left: -26px;
         height: 20px;
         width: 20px;
+        border-radius: 50% 50% 0 0;
         color: var(--main-color);
         font-size: 24px;
-        border-radius: 50%;
         z-index: 1;
         display: flex;
         justify-content: center;
@@ -86,6 +86,7 @@ export default {
       &::after {
         @include cardAfter();
       }
+
       h2 {
         color: var(--content-title);
       }
@@ -93,7 +94,6 @@ export default {
         font-weight: normal;
         font-size: 19px;
         font-weight: 600;
-
       }
       h5 {
         font-weight: 500;
@@ -105,27 +105,25 @@ export default {
           margin-left: var(--base-content-padding);
         }
       }
+      &:nth-of-type(1) {
+        &:before {
+          background-color: var(--bg-color);
+          animation: glow 1500ms infinite;
+        }
+      }
+      &:not(:nth-of-type(1)) {
+        &:before {
+          // filter: drop-shadow(0px 0px 20px var(--icon-glow-color));
+        }
+      }
     }
   }
-
-  //   .card:nth-of-type(1) {
-  // &:before {
-  //   background: #e74700;
-  //   box-shadow: 0 0 18px lighten(#e74700, 24%);
-  //   animation: 1750ms linear infinite pulse;
-  // }
-  //   }
 }
 
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 2px lighten(#e74700, 24%);
-  }
-  80% {
-    box-shadow: 0 0 18px lighten(#e74700, 24%);
-  }
-  100% {
-    box-shadow: 0 0 2px lighten(#e74700, 24%);
+@keyframes glow {
+  50% {
+    filter: drop-shadow(0px 0px 15px var(--icon-glow-color));
+    background-color: var(--icon-glow-background);
   }
 }
 </style>

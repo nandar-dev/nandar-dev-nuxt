@@ -10,8 +10,7 @@
   "devDependencies": {
     "@iconify/vue": "^4.1.0",
     "@nuxtjs/color-mode": "^3.2.0",
-    "nuxt": "^3.3.1",
-    "sass": "^1.63.4"
+    "nuxt": "^3.3.1"
   },
   "dependencies": {
     "@morev/vue-transitions": "^2.3.6",
