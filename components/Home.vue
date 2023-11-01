@@ -8,7 +8,7 @@
         {{ appConfig.devDescription }}
       </p>
       <button>
-        <a target="_blank" href="/pdf/nandar's_resume.pdf">Resume</a>
+        <a target="_blank" href="/pdf/nandar's_resume.pdf" download>Resume</a>
       </button>
     </div>
     <div class="image">
