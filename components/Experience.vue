@@ -36,9 +36,9 @@ export default {
   top: 40px;
   left: -18px;
   height: $height;
-  background: linear-gradient(var(--g-sepator-soft-color), var(--g-separator-primary-color), var(--g-separator-secondary-color), var(--g-separator-dark-color));
   width: 2px;
   border-radius: 3px;
+  // background: linear-gradient(var(--g-sepator-soft-color), var(--g-separator-primary-color), var(--g-separator-secondary-color), var(--g-separator-dark-color));
 }
 
 .experience {
@@ -83,8 +83,24 @@ export default {
         align-items: center;
       }
 
+      &:nth-of-type(even) {
+        &:after {
+          background: linear-gradient(
+            var(--g-separator-dark-color),
+            var(--g-separator-secondary-color),
+            var(--g-separator-primary-color),
+            var(--g-sepator-soft-color)
+          );
+        }
+      }
       &::after {
         @include cardAfter();
+        background: linear-gradient(
+          var(--g-sepator-soft-color),
+          var(--g-separator-primary-color),
+          var(--g-separator-secondary-color),
+          var(--g-separator-dark-color)
+        );
       }
 
       h2 {
