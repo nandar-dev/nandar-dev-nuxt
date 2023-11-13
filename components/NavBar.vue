@@ -34,7 +34,7 @@
           </a>
 
           <a target="_blank" :href="appConfig.social.twitter">
-            <Icon icon="mdi:twitter" />
+            <Icon icon="fa6-brands:x-twitter" />
           </a>
         </div>
       </div>
@@ -86,7 +86,7 @@
           </a>
 
           <a target="_blank" href="https://twitter.com/nanda2000dev">
-            <Icon icon="mdi:twitter" />
+            <Icon icon="fa6-brands:x-twitter" />
           </a>
         </div>
       </div>
