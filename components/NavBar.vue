@@ -1,14 +1,17 @@
 <template>
   <header>
     <nav>
-      <a class="logo" href="#home">{{ appConfig.devName }}</a>
+      <NuxtLink class="logo" to="/">{{ appConfig.devName }}</NuxtLink>
       <div class="right-link">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><NuxtLink to="/">Home</NuxtLink></li>
+          <li><NuxtLink to="/#about">About</NuxtLink></li>
+          <li>
+            <NuxtLink to="/blog"> Blog <span>beta</span> </NuxtLink>
+          </li>
+          <li><NuxtLink to="/#experience">Experience</NuxtLink></li>
+          <li><NuxtLink to="/#projects">Projects</NuxtLink></li>
+          <li><NuxtLink to="/#contact">Contact</NuxtLink></li>
         </ul>
 
         <div class="theme">
@@ -51,11 +54,14 @@
     <div v-if="panelVisible" class="menu-panel">
       <div class="menu-content">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><NuxtLink to="/">Home</NuxtLink></li>
+          <li><NuxtLink to="/#about">About</NuxtLink></li>
+          <li>
+            <NuxtLink to="/blog"> Blog <span>beta</span> </NuxtLink>
+          </li>
+          <li><NuxtLink to="/#experience">Experience</NuxtLink></li>
+          <li><NuxtLink to="/#projects">Projects</NuxtLink></li>
+          <li><NuxtLink to="/#contact">Contact</NuxtLink></li>
           <li class="preference">
             <h4>Preference</h4>
 
@@ -215,6 +221,17 @@ header {
 
       ul {
         @include ul();
+      }
+
+      span {
+        color: var(--tag-text-color);
+        background: var(--tag-bg-color);
+        opacity: 0.6;
+        font-size: 12px;
+        font-weight: 300;
+        border: solid 1px var(--tag-border-color);
+        padding: 0px 4px;
+        border-radius: 14px;
       }
 
       .theme {

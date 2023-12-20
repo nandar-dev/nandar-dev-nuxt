@@ -3,6 +3,15 @@
 import appConfig from "./utils/appConfig";
 
 export default defineNuxtConfig({
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'about',
+        path: '/#about',
+        component: resolve(__dirname, 'pages/about.vue')
+      });
+    }
+  },
   app: {
     head: {
       title: appConfig.sitename,

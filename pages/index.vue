@@ -1,11 +1,7 @@
 <template>
-  <NavBar />
-  <main class="container">
-    <Home />
+   <Home />
     <About />
     <Experience />
     <Projects />
     <Contact />
-  </main>
-  <Footer />
 </template>
