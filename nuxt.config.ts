@@ -3,15 +3,6 @@
 import appConfig from "./utils/appConfig";
 
 export default defineNuxtConfig({
-  router: {
-    extendRoutes(routes, resolve) {
-      routes.push({
-        name: 'about',
-        path: '/#about',
-        component: resolve(__dirname, 'pages/about.vue')
-      });
-    }
-  },
   app: {
     head: {
       title: appConfig.sitename,
@@ -94,6 +85,7 @@ export default defineNuxtConfig({
           href: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css",
         },
       ],
+      script: [{ src: "https://cdn.ckeditor.com/ckeditor5/40.2.0/super-build/ckeditor.js" }],
     },
   },
   css: ["@/assets/css/index.scss"],

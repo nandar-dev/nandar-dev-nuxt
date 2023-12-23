@@ -7,7 +7,7 @@
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/#about">About</NuxtLink></li>
           <li>
-            <NuxtLink to="/blog"> Blog <span>beta</span> </NuxtLink>
+            <NuxtLink to="/blog"> Blog <span class="tag">beta</span> </NuxtLink>
           </li>
           <li><NuxtLink to="/#experience">Experience</NuxtLink></li>
           <li><NuxtLink to="/#projects">Projects</NuxtLink></li>
@@ -57,7 +57,7 @@
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/#about">About</NuxtLink></li>
           <li>
-            <NuxtLink to="/blog"> Blog <span>beta</span> </NuxtLink>
+            <NuxtLink to="/blog"> Blog <span class="tag">beta</span> </NuxtLink>
           </li>
           <li><NuxtLink to="/#experience">Experience</NuxtLink></li>
           <li><NuxtLink to="/#projects">Projects</NuxtLink></li>
@@ -223,16 +223,7 @@ header {
         @include ul();
       }
 
-      span {
-        color: var(--tag-text-color);
-        background: var(--tag-bg-color);
-        opacity: 0.6;
-        font-size: 12px;
-        font-weight: 300;
-        border: solid 1px var(--tag-border-color);
-        padding: 0px 4px;
-        border-radius: 14px;
-      }
+      
 
       .theme {
         @include theme();

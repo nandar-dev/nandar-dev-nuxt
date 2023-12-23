@@ -15,6 +15,7 @@
     </div>
 
     <div class="content">
+      <img class="cover-img" src="https://images.unsplash.com/photo-1702957954496-8bba5d73a390?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8" alt="">
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque
         non, nemo magni fugit perspiciatis omnis sunt corrupti nam sit, hic
@@ -39,20 +40,30 @@
         explicabo quis molestias eos et.
       </p>
 
-        <code>
-        body {
+      <code>
+        <pre>
+          body {
           color: yellow;
           font-size: 16px;
           line-height: 1.5;
-        }
+          }
+          </pre
+        >
       </code>
     </div>
   </div>
+  <div id="container">
+            <div id="editor">
+            </div>
+        </div>
 </template>
+ 
 
 <style lang="scss" scoped>
 .blog-detail {
-  padding-top: calc(var(--navbar-height) + 50px);
+ 
+
+  padding: calc(var(--navbar-height) + 50px) 150px 0 150px;
 
   .desc {
     margin-top: 10px;
@@ -69,6 +80,15 @@
 
   .content {
     margin-top: 50px;
+
+    .cover-img{
+      max-height: 400px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: var(--base-border-radius);
+    }
   }
+
+
 }
 </style>
