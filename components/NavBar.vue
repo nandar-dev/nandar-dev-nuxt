@@ -1,14 +1,17 @@
 <template>
   <header>
     <nav>
-      <a class="logo" href="#home">{{ appConfig.devName }}</a>
+      <NuxtLink class="logo" to="/">{{ appConfig.devName }}</NuxtLink>
       <div class="right-link">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><NuxtLink to="/">Home</NuxtLink></li>
+          <li><NuxtLink to="/#about">About</NuxtLink></li>
+          <li>
+            <NuxtLink to="/blog"> Blog <span class="tag">beta</span> </NuxtLink>
+          </li>
+          <li><NuxtLink to="/#experience">Experience</NuxtLink></li>
+          <li><NuxtLink to="/#projects">Projects</NuxtLink></li>
+          <li><NuxtLink to="/#contact">Contact</NuxtLink></li>
         </ul>
 
         <div class="theme">
@@ -34,7 +37,7 @@
           </a>
 
           <a target="_blank" :href="appConfig.social.twitter">
-            <Icon icon="mdi:twitter" />
+            <Icon icon="fa6-brands:x-twitter" />
           </a>
         </div>
       </div>
@@ -51,11 +54,14 @@
     <div v-if="panelVisible" class="menu-panel">
       <div class="menu-content">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><NuxtLink to="/">Home</NuxtLink></li>
+          <li><NuxtLink to="/#about">About</NuxtLink></li>
+          <li>
+            <NuxtLink to="/blog"> Blog <span class="tag">beta</span> </NuxtLink>
+          </li>
+          <li><NuxtLink to="/#experience">Experience</NuxtLink></li>
+          <li><NuxtLink to="/#projects">Projects</NuxtLink></li>
+          <li><NuxtLink to="/#contact">Contact</NuxtLink></li>
           <li class="preference">
             <h4>Preference</h4>
 
@@ -86,7 +92,7 @@
           </a>
 
           <a target="_blank" href="https://twitter.com/nanda2000dev">
-            <Icon icon="mdi:twitter" />
+            <Icon icon="fa6-brands:x-twitter" />
           </a>
         </div>
       </div>
@@ -216,6 +222,8 @@ header {
       ul {
         @include ul();
       }
+
+      
 
       .theme {
         @include theme();
