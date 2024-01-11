@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     head: {
       title: appConfig.sitename,
       meta: [
+        { name: 'google-site-verification', content: 'OYSowK-wNUuu2tAqj5BwsVsMt5rr87202Daf5D9a4BE' },
         {
           name: "viewport",
           content: "width=device-width, initial-scale=1.0",
