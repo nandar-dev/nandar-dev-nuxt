@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         },
         {
           name: "keywords",
-          content: appConfig.devDescription,
+          content: appConfig.keywords,
         },
         {
           property: "og:description",
