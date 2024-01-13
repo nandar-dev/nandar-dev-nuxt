@@ -18,6 +18,7 @@ const appConfig = {
     link: "https://goo.gl/maps/qfSY6ZsXDyL1DLs39",
     address: "Nawnghkio, Myanmar",
   },
+  keywords: 'portfolio, web development, vue, nandar, nanda, frontend developer, software developer, web developer, nawnghkio, naungcho, myanmar',
   contact: {
     email: "nandar.dev@outlook.com",
     phone: "+959960160802",
