@@ -7,7 +7,10 @@ export default defineNuxtConfig({
     head: {
       title: appConfig.sitename,
       meta: [
-        { name: 'google-site-verification', content: 'OYSowK-wNUuu2tAqj5BwsVsMt5rr87202Daf5D9a4BE' },
+        {
+          name: "google-site-verification",
+          content: "eqSLYtxNAq5HN27YbPeVHzCMd8kK_wDiwj1Umvcuz_E",
+        },
         {
           name: "viewport",
           content: "width=device-width, initial-scale=1.0",
@@ -86,7 +89,11 @@ export default defineNuxtConfig({
           href: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css",
         },
       ],
-      script: [{ src: "https://cdn.ckeditor.com/ckeditor5/40.2.0/super-build/ckeditor.js" }],
+      script: [
+        {
+          src: "https://cdn.ckeditor.com/ckeditor5/40.2.0/super-build/ckeditor.js",
+        },
+      ],
     },
   },
   css: ["@/assets/css/index.scss"],
