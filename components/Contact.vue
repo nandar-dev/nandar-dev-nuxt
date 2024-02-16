@@ -39,7 +39,7 @@
           <input
             type="hidden"
             name="_next"
-            value="https://nandar.netlify.app/thanks.html" />
+            value="/#contact" />
           <button type="submit">Send message</button>
         </div>
       </form>
