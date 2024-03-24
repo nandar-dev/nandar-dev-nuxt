@@ -6,9 +6,9 @@
         <ul>
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/#about">About</NuxtLink></li>
-          <!-- <li>
+          <li>
             <NuxtLink to="/blog"> Blog <span class="tag">beta</span> </NuxtLink>
-          </li> -->
+          </li>
           <li><NuxtLink to="/#experience">Experience</NuxtLink></li>
           <li><NuxtLink to="/#projects">Projects</NuxtLink></li>
           <li><NuxtLink to="/#contact">Contact</NuxtLink></li>
@@ -56,9 +56,9 @@
         <ul>
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/#about">About</NuxtLink></li>
-          <!-- <li>
+          <li>
             <NuxtLink to="/blog"> Blog <span class="tag">beta</span> </NuxtLink>
-          </li> -->
+          </li>
           <li><NuxtLink to="/#experience">Experience</NuxtLink></li>
           <li><NuxtLink to="/#projects">Projects</NuxtLink></li>
           <li><NuxtLink to="/#contact">Contact</NuxtLink></li>
