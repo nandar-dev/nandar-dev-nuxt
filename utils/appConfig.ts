@@ -7,6 +7,8 @@ const getAge = () => {
 };
 
 const appConfig = {
+  // apiUrl: "https://nandar-dev-backend.onrender.com",
+  apiUrl: "http://localhost:3000",
   devName: "Nandar",
   sitename: "Nandar | Web Developer",
   prefession: "Web Developer",
