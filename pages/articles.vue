@@ -11,9 +11,15 @@
           alt="Article Image" />
 
         <div class="card-content">
-          <!-- <span class="card-tag">Programming</span> -->
-          <div class="read-time">
-            <Icon icon="mdi:clock-outline" />
+          <div class="article-info">
+            <div class="read-time">
+            <div class="icon">
+              <Icon icon="mdi:clock-outline" />
+            </div>
+
+            <p>2 mins read</p>
+          </div>
+          <span class="card-tag">Programming</span>
           </div>
 
           <h2 class="card-content-title">{{ project.name }}</h2>
@@ -60,7 +66,25 @@ export default {
     }
 
     .card-content {
-      .card-tag {
+      .article-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      .read-time {
+        margin-top: 5px;
+        color: var(--text-soft-grey-color);
+        display: flex;
+        column-gap: 8px;
+        .icon {
+          font-size: 1.15rem;
+        }
+        p {
+          margin-top: 1.5px;
+          font-size: 0.88rem;
+        }
+      }
+
+        .card-tag {
         border-radius: 4px;
         background-color: var(--gray-bg-color);
         color: var(--text-grey-color);
@@ -69,6 +93,8 @@ export default {
         font-family: "Source Code Pro", monospace;
       }
 
+    }
+    
       .card-content-title {
         margin: 5px 0;
       }
