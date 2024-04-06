@@ -7,9 +7,9 @@
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/#about">About</NuxtLink></li>
           <li>
-            <NuxtLink to="/blog"> Blog <span class="tag">beta</span> </NuxtLink>
+            <NuxtLink to="/articles"> Articles <span class="tag">beta</span> </NuxtLink>
           </li>
-          <li><NuxtLink to="/#experience">Experience</NuxtLink></li>
+          <li><NuxtLink to="/#experiences">Experiences</NuxtLink></li>
           <li><NuxtLink to="/#projects">Projects</NuxtLink></li>
           <li><NuxtLink to="/#contact">Contact</NuxtLink></li>
         </ul>
@@ -37,7 +37,7 @@
           </a>
 
           <a target="_blank" :href="appConfig.social.twitter">
-            <Icon icon="fa6-brands:x-twitter" />
+            <Icon style="width: 19px" icon="fa6-brands:x-twitter" />
           </a>
         </div>
       </div>
@@ -57,9 +57,9 @@
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/#about">About</NuxtLink></li>
           <li>
-            <NuxtLink to="/blog"> Blog <span class="tag">beta</span> </NuxtLink>
+            <NuxtLink to="/articles"> Articles <span class="tag">beta</span> </NuxtLink>
           </li>
-          <li><NuxtLink to="/#experience">Experience</NuxtLink></li>
+          <li><NuxtLink to="/#experiences">Experiences</NuxtLink></li>
           <li><NuxtLink to="/#projects">Projects</NuxtLink></li>
           <li><NuxtLink to="/#contact">Contact</NuxtLink></li>
           <li class="preference">
@@ -92,7 +92,7 @@
           </a>
 
           <a target="_blank" href="https://twitter.com/nanda2000dev">
-            <Icon icon="fa6-brands:x-twitter" />
+            <Icon style="width: 19px" icon="fa6-brands:x-twitter" />
           </a>
         </div>
       </div>

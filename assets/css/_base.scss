@@ -37,7 +37,10 @@
   --logo-font-size: 1.7rem;
   --section-title-font-size: 2rem;
   --content-title-font-size: 1.6rem;
+  --card-content-title-font-size: 1.25rem;
   --sub-text-font-size: 1.05rem;
+  --card-sub-text-font-size: 0.93rem;
+  --card-tag-text-font-size: 0.74rem;
   --dev-name-home: 4.5rem;
   --profession-name-home: 2.5rem;
 
@@ -78,7 +81,6 @@
 }
 code,
 pre::selection {
-  
   color: var(--text-black-color);
   background-color: var(--text-white-color);
 }
@@ -156,10 +158,20 @@ textarea::placeholder {
   color: var(--content-title);
   font-size: var(--content-title-font-size);
 }
+.card-content-title {
+  color: var(--content-title);
+  font-weight: 600;
+  font-size: var(--card-content-title-font-size);
+}
 
 .sub-text {
   color: var(--text-grey-color);
   font-size: var(--sub-text-font-size);
+}
+
+.card-sub-text {
+  color: var(--text-grey-color);
+  font-size: var(--card-sub-text-font-size);
 }
 
 .container {

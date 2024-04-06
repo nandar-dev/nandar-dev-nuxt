@@ -1,17 +1,17 @@
 <template>
   <section class="projects" id="projects">
-    <h1 class="section-title">My Projects</h1>
+    <h1 class="section-title">Projects</h1>
     <div class="list">
       <div v-for="project in appConfig.projects" class="card">
         <img
           v-if="project.screenshots"
           :src="project.screenshots"
           onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png'"
-           loading="lazy"
+          loading="lazy"
           alt="Project Image" />
         <div class="card-content">
           <div class="header">
-            <h2 class="content-title">{{ project.name }}</h2>
+            <h2 class="card-content-title">{{ project.name }}</h2>
             <div class="links">
               <a v-if="project.gitLink" target="_blank" :href="project.gitLink"
                 ><Icon icon="mdi:github"
@@ -25,7 +25,7 @@
               /></a>
             </div>
           </div>
-          <p class="sub-text">
+          <p class="card-sub-text">
             {{ project.description }}
           </p>
           <div class="card-tags">
@@ -76,7 +76,7 @@ export default {
       width: 100%;
       height: 250px;
       object-fit: cover;
-      padding-bottom: 10px;
+      border-radius: 6px;
     }
 
     .card-content {
@@ -84,16 +84,16 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .content-title {
-          margin-bottom: 10px;
+        .card-content-title {
+          margin: 5px 0;
         }
         .links {
           @include socialIcon();
         }
       }
 
-      .sub-text {
-        margin-bottom: 20px;
+      .card-sub-text {
+        margin-bottom: 10px;
       }
       .card-tags {
         display: flex;
@@ -104,8 +104,8 @@ export default {
           background-color: var(--gray-bg-color);
           color: var(--text-grey-color);
           padding: 5px 8px;
-          border-radius: 16px;
-          font-size: 0.75rem;
+          border-radius: 4px;
+          font-size: var(--card-tag-text-font-size);
           font-family: "Source Code Pro", monospace;
         }
       }

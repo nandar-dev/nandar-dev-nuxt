@@ -1,8 +1,8 @@
 <template>
-  <section class="experience" id="experience">
+  <section class="experience" id="experiences">
     <h1 class="section-title">Experiences</h1>
     <div class="timeline">
-      <div v-for="jobs in appConfig.experience" class="content-card">
+      <div v-for="jobs in appConfig.experiences" class="content-card">
         <h5>{{ jobs.from }} - {{ jobs.to }}</h5>
         <h2>
           {{ jobs.companyName }}

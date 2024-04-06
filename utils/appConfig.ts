@@ -30,7 +30,7 @@ const appConfig = {
     facebook: "https://www.facebook.com/mg.nandar.14/",
     instagram: "https://www.instagram.com/nanda_ghimire/",
   },
-  experience: [
+  experiences: [
     {
       companyName: "ConceptX",
       position: "Front-End Developer",

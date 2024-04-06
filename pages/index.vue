@@ -1,7 +1,7 @@
 <template>
   <Home />
   <About />
-  <Experience />
+  <Experiences />
   <Projects />
   <Contact />
 </template>
