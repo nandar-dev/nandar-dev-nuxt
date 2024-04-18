@@ -7,7 +7,7 @@
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/#about">About</NuxtLink></li>
           <li>
-            <NuxtLink to="/articles"> Articles <span class="tag">beta</span> </NuxtLink>
+            <NuxtLink to="/articles"> Articles <span class="tag">new</span> </NuxtLink>
           </li>
           <li><NuxtLink to="/#experiences">Experiences</NuxtLink></li>
           <li><NuxtLink to="/#projects">Projects</NuxtLink></li>
@@ -57,7 +57,7 @@
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/#about">About</NuxtLink></li>
           <li>
-            <NuxtLink to="/articles"> Articles <span class="tag">beta</span> </NuxtLink>
+            <NuxtLink to="/articles"> Articles <span class="tag">new</span> </NuxtLink>
           </li>
           <li><NuxtLink to="/#experiences">Experiences</NuxtLink></li>
           <li><NuxtLink to="/#projects">Projects</NuxtLink></li>

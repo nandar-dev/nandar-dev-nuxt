@@ -1,35 +1,59 @@
 <template>
   <div class="blog-detail">
     <h1 class="content-title">
-      Stop using .value every time in Vue.js or Nuxt.js
+      {{ article.title }}
     </h1>
     <p class="desc">
-      I did this before. I used to use ref() on everything because someone said
-      to do so in a comment on StackOverflow or GitHub issue, I don’t remember
-      the
+      {{ article.sub_title }}
     </p>
 
     <div class="info">
-      <p>2k views | 5 mins read</p>
+      <!-- <p>2k views | 5 mins read</p> -->
+      <p>5 mins read</p>
       <p>Published 1 month ago</p>
     </div>
 
     <div class="content">
       <img
         class="cover-img"
-        src="https://images.unsplash.com/photo-1702957954496-8bba5d73a390?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8"
-        alt="" />
+        :src="'https://images.unsplash.com/photo-1713189005053-e38b1b88ac4a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8'"
+        onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png'"
+        loading="lazy"
+        alt="Article Image" />
       <div v-html="html"></div>
     </div>
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { useStore } from "~/stores/articles";
+
 export default {
+  setup() {
+    definePageMeta({
+      layout: "no-footer",
+    });
+    const store = useStore();
+    const route = useRoute();
+
+    const state = reactive({
+      article: store.$state.viewing_article,
+    });
+
+
+    onBeforeMount(() => {
+      store.getArticle(route.params.id);
+    });
+
+    return {
+      ...toRefs(state),
+      store,
+    };
+  },
   data() {
     return {
       html: `<h1>Testing</h1><p><br></p><pre class="ql-syntax" spellcheck="false">Hello Wold
-</pre>`,
+  </pre>`,
     };
   },
 };
@@ -50,7 +74,7 @@ export default {
 }
 
 .blog-detail {
-    user-select: all;
+  user-select: all;
 
   padding: calc(var(--navbar-height) + 50px) 150px 0 150px;
 
@@ -65,6 +89,7 @@ export default {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    color: var(--text-black-color);
   }
 
   .content {

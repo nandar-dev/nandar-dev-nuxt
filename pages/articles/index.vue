@@ -1,67 +1,78 @@
 <template>
   <section class="articles">
+    <NuxtLoadingIndicator :throttle="1000" :duration="10000" />
     <h1 class="section-title">Articles</h1>
-    <div class="list">
-      <div v-for="article in data.data" :key="article" class="card">
-        <img
-          v-if="article.screenshots"
-          :src="article.screenshots"
-          onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png'"
-          loading="lazy"
-          alt="Article Image" />
+    <div v-if="!loading" class="list">
+      <div>
+        <div v-for="article in store.articles" :key="article.id" class="card">
+          <NuxtLink :to="'articles/' + article.id">
+            <img
+              :src="'https://images.unsplash.com/photo-1713189005053-e38b1b88ac4a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8'"
+              onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png'"
+              loading="lazy"
+              alt="Article Image" />
 
-        <div class="card-content">
-          <div class="article-info">
-            <div class="read-time">
-              <div class="icon">
-                <Icon icon="mdi:clock-outline" />
+            <div class="card-content">
+              <div class="article-info">
+                <div class="read-time">
+                  <div class="icon">
+                    <Icon icon="mdi:clock-outline" />
+                  </div>
+
+                  <p>2 mins read</p>
+                </div>
+                <span class="card-tag">Programming</span>
               </div>
 
-              <p>2 mins read</p>
+              <h2 class="card-content-title">{{ article.title }}</h2>
+
+              <p class="card-sub-text">
+                {{ article.sub_title }}
+              </p>
             </div>
-            <span class="card-tag">Programming</span>
-          </div>
-
-          <h2 class="card-content-title">{{ article.title }}</h2>
-
-          <p class="card-sub-text">
-            {{ article.sub_title }}
-          </p>
+          </NuxtLink>
         </div>
-       
       </div>
+    </div>
+    <div v-else>
+      <Loading />
     </div>
   </section>
 </template>
 
 <script lang="ts">
+import { useStore } from "~/stores/articles";
 import appConfig from "~~/utils/appConfig";
+
 export default {
   async setup() {
-    const { data } = await useFetch(`http://localhost:3000/api/blog/get`);
+    definePageMeta({
+      layout: "no-footer",
+    });
+    const store = useStore();
 
     const onImageLoad = () => {
       console.log("... on load");
     };
     const state = reactive({
-     });
+      loading: true,
+    });
 
     const getAritcles = async () => {
-      console.log("dkdlkfjl");
-       // await useFetch(`${appConfig.apiUrl}/api/blog/get`)
-      // useFetch(`http://localhost:3000/api/blog/get`, {
-      //   onResponse({ response }): void {
-      //     console.log(response, "data>>>");
-      //     alert(JSON.stringify(response));
-      //   },
-      // });
+      await useFetch(`${appConfig.apiUrl}/api/blog/get`, {
+        onResponse({ response }): void {
+          store.articles = response._data.data;
+        },
+      }).finally(() => {
+        state.loading = false;
+      });
     };
 
-    onMounted(() => {
+    onBeforeMount(() => {
       getAritcles();
     });
 
-    return { onImageLoad, appConfig, ...toRefs(state),data };
+    return { store, onImageLoad, appConfig, ...toRefs(state) };
   },
 };
 </script>
