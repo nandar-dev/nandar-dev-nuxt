@@ -124,7 +124,7 @@ export default {
       &:nth-of-type(1) {
         &:before {
           background-color: var(--bg-color);
-          animation: glow 1500ms infinite;
+          // animation: glow 1500ms infinite; // disable animation
         }
       }
       &:not(:nth-of-type(1)) {
