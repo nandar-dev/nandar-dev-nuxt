@@ -35,7 +35,7 @@ const appConfig = {
       companyName: "ConceptX",
       position: "Front-End Developer",
       from: "2023 April",
-      to: "Present",
+      to: "2024 May",
       responsibility: [
         "Maintain and update an existing Learning Management System, ensuring its functionality, user experience, and bug-free performance.",
         "Developing responsive user interfaces of School Mangement System using Vue.js and Tailwind CSS.",
