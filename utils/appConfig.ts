@@ -18,7 +18,8 @@ const appConfig = {
     link: "https://goo.gl/maps/qfSY6ZsXDyL1DLs39",
     address: "Nawnghkio, Myanmar",
   },
-  keywords: 'portfolio, web development, vue, nandar, nanda, frontend developer, software developer, web developer, nawnghkio, naungcho, myanmar',
+  keywords:
+    "portfolio, web development, vue, nandar, nanda, frontend developer, software developer, web developer, nawnghkio, naungcho, myanmar",
   contact: {
     email: "nandar.dev@outlook.com",
     phone: "+959960160802",
@@ -185,6 +186,15 @@ const appConfig = {
     },
   },
   projects: [
+    {
+      name: "Guess The Number",
+      description: "A simple guessing the number game.",
+      gitLink: "https://github.com/nandar-dev/guess_the_number",
+      demoLink: "https://guessthenumber-project.vercel.app",
+      technologies: ["HTML", "CSS", "Javascript"],
+      screenshots:
+        "https://github.com/nandar-dev/guess_the_number/blob/master/public/demo.png?raw=true",
+    },
     {
       name: "JobDotCom",
       description:
