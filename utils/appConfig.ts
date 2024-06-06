@@ -190,10 +190,10 @@ const appConfig = {
       name: "Guess The Number",
       description: "A simple guessing the number game.",
       gitLink: "https://github.com/nandar-dev/guess_the_number",
-      demoLink: "https://guessthenumber-project.vercel.app",
+      demoLink: "https://guess-the-number-project.vercel.app",
       technologies: ["HTML", "CSS", "Javascript"],
       screenshots:
-        "https://github.com/nandar-dev/guess_the_number/blob/master/public/demo.png?raw=true",
+        "https://github.com/nandar-dev/guess_the_number/blob/master/assets/demo.png?raw=true",
     },
     {
       name: "JobDotCom",
