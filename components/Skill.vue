@@ -132,10 +132,14 @@ $progressBarHeight: 10px;
           border-radius: var(--base-border-radius);
           border: solid 1px var(--gray-bg-color);
           color: var(--text-black-color);
-
+          will-change: filter;
+          transition: filter 300ms;
           .icon {
             text-align: center;
             font-size: 4rem;
+          }
+          &:hover{
+            filter: drop-shadow(0 0 2em var(--link-hover-color));
           }
         }
       }
