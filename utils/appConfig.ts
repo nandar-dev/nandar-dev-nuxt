@@ -15,14 +15,14 @@ const appConfig = {
   age: getAge(),
   prodUrl: "https://nandar.netlify.app",
   location: {
-    link: "https://goo.gl/maps/qfSY6ZsXDyL1DLs39",
-    address: "Nawnghkio, Myanmar",
+    link: "https://maps.app.goo.gl/gZT6rq7auLcLMbBr5",
+    address: "Bangkok, Thailand",
   },
   keywords:
     "portfolio, web development, vue, nandar, nanda, frontend developer, software developer, web developer, nawnghkio, naungcho, myanmar",
   contact: {
     email: "nandar.dev@outlook.com",
-    phone: "+959960160802",
+    phone: "+66620048684",
   },
   social: {
     github: "https://github.com/nandar-dev/",

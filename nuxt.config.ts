@@ -96,7 +96,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ["@/assets/css/index.scss"],
+  css: ["@/css/index.scss"],
   typescript: {
     strict: true,
   },
