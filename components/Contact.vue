@@ -2,7 +2,7 @@
   <section class="contact" id="contact">
     <h1 class="section-title">Get In Touch</h1>
 
-    <div class="contact-container">
+    <div data-aos="fade-down" class="contact-container">
       <form
         class="card"
         action="https://formsubmit.co/5aa9fcc8ff2ba952bdd6ae1c0280ab9a"

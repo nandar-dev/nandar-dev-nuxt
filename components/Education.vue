@@ -2,7 +2,7 @@
   <section class="education">
     <h1 class="section-title">Education</h1>
 
-    <div class="list">
+    <div data-aos="fade-right" class="list">
       <div class="card">
         <div v-for="school in appConfig.education.school" class="item">
           <div class="header">
@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div data-aos="fade-left" class="card">
         <div class="item">
           <h2 class="content-title">Certificate Courses</h2>
           <div class="certificates">
