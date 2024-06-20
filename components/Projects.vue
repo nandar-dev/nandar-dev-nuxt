@@ -1,8 +1,8 @@
 <template>
   <section class="projects" id="projects">
     <h1 class="section-title">My Projects</h1>
-    <div class="list">
-      <div v-for="project in appConfig.projects" class="card">
+    <div  class="list">
+      <div v-for="project in appConfig.projects" data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="card">
         <img
           v-if="project.screenshots"
           :src="project.screenshots"

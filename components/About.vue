@@ -2,11 +2,11 @@
   <section class="about" id="about">
     <h1 class="section-title">Who am I?</h1>
     <div class="img-content">
-      <div class="wrapper">
+      <div data-aos="fade-right" class="wrapper">
         <img src="./../assets/images/nd.png" alt="Nandar" />
       </div>
 
-      <div class="info">
+      <div data-aos="fade-left" class="info">
         <h4>
           Name: <span>{{ appConfig.devName }}</span>
         </h4>
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <p>
+    <p data-aos="fade-up" data-aos-duration="500">
       Hi there, I'm a web developer with a focus on front-end development, I am
       passionate about creating user-friendly interfaces and engaging digital
       experiences. Although I didn't pursue a formal degree in computer science
@@ -62,7 +62,7 @@
       I'm excited to see where my journey takes me next.
     </p>
 
-    <div class="socials">
+    <div data-aos="fade-up" class="socials">
       <a target="_blank" :href="appConfig.social.github">
         <Icon icon="mdi:github" />
       </a>
@@ -72,7 +72,7 @@
       </a>
 
       <a target="_blank" :href="appConfig.social.twitter">
-        <Icon icon="fa6-brands:x-twitter" /> 
+        <Icon icon="fa6-brands:x-twitter" />
       </a>
 
       <a target="_blank" :href="appConfig.social.facebook">

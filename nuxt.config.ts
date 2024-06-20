@@ -100,7 +100,12 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
-  modules: ["@nuxtjs/color-mode"],
+  aos: {
+    mirror: false,
+    once: true,
+    duration: 500,
+  },
+  modules: ["@nuxtjs/color-mode", "nuxt-aos"],
   colorMode: {
     preference: "system", // default value of $colorMode.preference
     fallback: "light", // fallback value if not system preference found
@@ -108,6 +113,6 @@ export default defineNuxtConfig({
     globalName: "__NUXT_COLOR_MODE__",
     componentName: "ColorScheme",
     classSuffix: "",
-    storageKey: "nuxt-color-mode",
+    storageKey: "theme",
   },
 });

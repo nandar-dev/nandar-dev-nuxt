@@ -1,6 +1,6 @@
 <template>
   <section class="home" id="home">
-    <div class="info">
+    <div data-aos="fade-right" class="info">
       <h4>Hello, I'm</h4>
       <h1>NANDAR</h1>
       <h2>Web Developer</h2>
@@ -11,11 +11,10 @@
         <a target="_blank" href="/pdf/nandar's_resume.pdf" download>Resume</a>
       </button>
     </div>
-    <div class="image">
+    <div data-aos="fade-left" class="image">
       <!-- <img src="./../assets/images/home-img.svg" alt="Home Image" /> -->
-
       <LottieAnimation
-        v-if="getTheme() === theme.light"
+        v-if="$colorMode.value === theme.light"
         class="lottie"
         :animation-data="CodingJSON"
         :auto-play="true"
@@ -30,7 +29,7 @@
         :speed="1" />
     </div>
   </section>
-  <div class="scroll-down">
+  <div data-aos="fade-up" class="scroll-down">
     <a href="#about">
       <div class="mouse">
         <div class="roll"></div>
@@ -45,7 +44,7 @@ import appConfig from "~~/utils/appConfig";
 import { LottieAnimation } from "lottie-web-vue";
 import CodingJSON from "~~/assets/lottie/coding.json";
 import CodingDarkJSON from "~~/assets/lottie/coding-dark.json";
-import { getTheme, theme } from "~~/utils/theme";
+import { theme } from "~~/utils/theme";
 
 export default {
   components: {
@@ -56,7 +55,6 @@ export default {
       appConfig,
       CodingJSON,
       CodingDarkJSON,
-      getTheme,
       theme,
     };
   },

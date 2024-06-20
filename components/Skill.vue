@@ -3,7 +3,10 @@
     <h1 class="section-title">Technologies</h1>
 
     <div class="summery">
-      <div v-for="summery in appConfig.skills.summery" class="item">
+      <div
+        v-for="(summery, index) in appConfig.skills.summery"
+        :data-aos="index == 0 ? 'fade-right' : 'fade-left'"
+        class="item">
         <div class="header">
           <h2 class="content-title">{{ summery.name }}</h2>
           <p class="sub-text">{{ summery.progress }}</p>
@@ -14,7 +17,7 @@
       </div>
     </div>
 
-    <div class="technology">
+    <div data-aos="fade-down" class="technology">
       <div class="card">
         <div class="item">
           <h2 class="content-title">Mainly Focus On</h2>
@@ -31,7 +34,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div data-aos="fade-down" class="card">
         <div class="item">
           <h2 class="content-title">Familiar With</h2>
           <div class="technologies">
@@ -138,7 +141,7 @@ $progressBarHeight: 10px;
             text-align: center;
             font-size: 4rem;
           }
-          &:hover{
+          &:hover {
             filter: drop-shadow(0 0 2em var(--link-hover-color));
           }
         }
