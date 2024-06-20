@@ -16,7 +16,7 @@
 
         <div class="theme">
           <Icon
-            v-if="getTheme() == theme.dark"
+            v-if="$colorMode.value == theme.dark"
             @click="switchTheme(theme.light)"
             class="light"
             icon="line-md:moon-filled-alt-to-sunny-filled-loop-transition" />
@@ -67,7 +67,7 @@
 
             <div class="theme">
               <Icon
-                v-if="getTheme() == theme.dark"
+                v-if="$colorMode.value == theme.dark"
                 @click="switchTheme(theme.light)"
                 class="light"
                 icon="line-md:moon-filled-alt-to-sunny-filled-loop-transition" />
@@ -101,7 +101,7 @@
 </template>
 
 <script lang="ts">
-import { getTheme, theme, switchTheme } from "./../utils/theme";
+import { theme, switchTheme } from "./../utils/theme";
 import { TransitionSlide } from "@morev/vue-transitions";
 import appConfig from "~~/utils/appConfig";
 
@@ -122,7 +122,6 @@ export default {
     };
 
     return {
-      getTheme,
       theme,
       switchTheme,
       panelVisible,
@@ -222,8 +221,6 @@ header {
       ul {
         @include ul();
       }
-
-      
 
       .theme {
         @include theme();
