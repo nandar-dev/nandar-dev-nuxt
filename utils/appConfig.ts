@@ -187,6 +187,15 @@ const appConfig = {
   },
   projects: [
     {
+      name: "Travel Hub",
+      description: "TravelHub Where Your Journeys Begin",
+      gitLink: "https://github.com/nandar-dev/TravelHub_Frontend",
+      demoLink: "https://travel-hub-frontend.vercel.app/#/",
+      technologies: ["Vue", "Tailwind", "Flowbite"],
+      screenshots:
+        "https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png",
+    },
+    {
       name: "Guess The Number",
       description: "A simple guessing the number game.",
       gitLink: "https://github.com/nandar-dev/guess_the_number",
